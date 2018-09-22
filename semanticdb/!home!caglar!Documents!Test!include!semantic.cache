@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_TEST_H" variable (:constant-flag t) nil [25 32])
+            ("person" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [50 58])
+                    ("_id" variable (:type "int") (reparse-symbol classsubparts) [61 69])
+                    ("public" label nil (reparse-symbol classsubparts) [71 78])
+                    ("person" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [97 104]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [90 105])
+                    ("getid" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [108 120]))                  
+                :type "class")
+                nil [34 123])
+            ("getid" function
+               (:parent "person"
+                :type "int")
+                nil [125 162])
+            ("person" function
+               (:constructor-flag t
+                :parent "person"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [179 186]))                  
+                :type ("person" type (:type "class") nil nil))
+                nil [164 202]))          
+      :file "test.h"
+      :pointmax 211
+      :fsize 210
+      :lastmodtime '(23406 12953 23196 519000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_TEST_H")
+          )
+))
+  :file "!home!caglar!Documents!Test!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

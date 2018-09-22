@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libgloparser.a")) nil [530 564])
+            ("noinst_HEADERS" variable (:default-value ("parser.h" "internal.h" "asm_parse.h" "c_res.h" "cpp_res.h" "java_res.h" "php_res.h" "asm_res.h" "asm_parse.h")) nil [565 679])
+            ("libgloparser_a_SOURCES" variable (:default-value ("parser.c" "C.c" "Cpp.c" "asm_parse.c" "asm_scan.c" "java.c" "php.c")) nil [680 760])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@")) nil [761 789])
+            ("libgloparser_a_DEPENDENCIES" variable (:default-value ("$(libgloparser_a_LIBADD)")) nil [790 845])
+            ("EXTRA_DIST" variable (:default-value ("reserved.pl" "HACKING" "c_res.in" "c_res.gpf" "cpp_res.in" "cpp_res.gpf" "java_res.in" "java_res.gpf" "php_res.in" "php_res.gpf" "php.l" "asm_res.in" "asm_res.gpf" "asm_parse.y" "asm_scan.l")) nil [846 1041]))          
+      :file "Makefile.am"
+      :pointmax 1041
+      :fsize 1040
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!libparser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

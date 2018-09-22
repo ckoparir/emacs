@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor2.out")) nil [1 16])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [17 32])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [33 57])
+            ("$(PKG)" function (:arguments ("main.c")) nil [57 124])
+            ("clean" function nil nil [124 182])
+            ("install" function (:arguments ("$(PKG)")) nil [183 263]))          
+      :file "Makefile"
+      :pointmax 291
+      :fsize 290
+      :lastmodtime '(23410 15054 417805 705000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!Tutor1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

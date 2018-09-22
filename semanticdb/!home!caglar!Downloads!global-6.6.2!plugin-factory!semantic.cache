@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("plugindir" variable (:default-value ("${libdir}/gtags")) nil [530 558])
+            ("plugin_LTLIBRARIES" variable (:default-value ("exuberant-ctags.la")) nil [558 667])
+            ("exuberant_ctags_la_SOURCES" variable (:default-value ("exuberant-ctags.c")) nil [693 740])
+            ("exuberant_ctags_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [740 806])
+            ("universal_ctags_la_SOURCES" variable (:default-value ("exuberant-ctags.c")) nil [831 878])
+            ("universal_ctags_la_CFLAGS" variable (:default-value ("-DUSE_EXTRA_FIELDS")) nil [878 926])
+            ("universal_ctags_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [926 992])
+            ("pygments_parser_la_SOURCES" variable (:default-value ("pygments-parser.c")) nil [1011 1058])
+            ("pygments_parser_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [1058 1124])
+            ("user_custom_la_SOURCES" variable (:default-value ("user-custom.c")) nil [1136 1175])
+            ("user_custom_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [1175 1237])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [1238 1266])
+            ("gtags_DATA" variable (:default-value ("PLUGIN_HOWTO" "PLUGIN_HOWTO.pygments")) nil [1266 1314])
+            ("scriptdir" variable (:default-value ("${datadir}/gtags/script")) nil [1315 1351])
+            ("script_DATA" variable (:default-value ("pygments_parser.py" "maps2conf.pl")) nil [1351 1397])
+            ("EXTRA_DIST" variable (:default-value ("$(gtags_DATA)" "${script_DATA}")) nil [1398 1440])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DDATADIR='\"$(datadir)\"'")) nil [1441 1494])
+            ("install-data-hook" function nil nil [1495 1597]))          
+      :file "Makefile.am"
+      :pointmax 1597
+      :fsize 1596
+      :lastmodtime '(23166 1324 0 0)
+      :unmatched-syntax '((shell-command 1515 . 1596) (bol 1514 . 1514))))
+  :file "!home!caglar!Downloads!global-6.6.2!plugin-factory!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

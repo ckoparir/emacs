@@ -1,0 +1,182 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("list.h" include nil nil [40 57])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [68 73]))                  
+                :type "int")
+                nil [59 567])
+            ("CloseQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("node1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 549]))                  
+                :type "int")
+                nil [532 550]))          
+      :file "main.c"
+      :pointmax 568
+      :fsize 566
+      :lastmodtime '(23412 54870 362909 434000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor6.out")) nil [1 16])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [17 32])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [33 57])
+            ("$(PKG)" function (:arguments ("main.c" "list.c" "list.h")) nil [57 125])
+            ("clean" function nil nil [125 183])
+            ("install" function (:arguments ("$(PKG)")) nil [184 264]))          
+      :file "Makefile"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(23412 50667 573539 778000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_LIST_H" variable (:constant-flag t) nil [25 32])
+            ("stddef.h" include (:system-flag t) nil [34 53])
+            ("TRUE" variable (:constant-flag t) nil [88 92])
+            ("FALSE" variable (:constant-flag t) nil [103 108])
+            ("BOOL" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [139 156])
+            ("tagQUEUE" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [186 198])
+                    ("head" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [201 213])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [216 229])
+                    ("tail" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [232 244])
+                    ("width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [247 260])
+                    ("pQueue" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [263 276]))                  
+                :type "struct")
+                nil [158 294])
+            ("HQUEUE" type
+               (:typedef ("tagQUEUE" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [158 294])
+            ("QUEUE" type
+               (:typedef ("tagQUEUE" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [158 294])
+            ("CreateQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [341 353])
+                    ("width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [354 367]))                  
+                :type ("HQUEUE" type (:type "class") nil nil))
+                nil [322 368])
+            ("CloseQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [385 399]))                  
+                :type "void")
+                nil [369 400])
+            ("PutQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [415 429])
+                    ("pItem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [430 448]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [401 449])
+            ("GetQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [464 478])
+                    ("pItem" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [479 491]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [450 492])
+            ("IsEmptyQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [511 525]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [493 526]))          
+      :file "list.h"
+      :pointmax 535
+      :fsize 534
+      :lastmodtime '(23412 54027 211385 534000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRUE" . ((number "1" 93 . 94)))
+          ("FALSE" . ((number "0" 109 . 110)))
+          ("_LIST_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("list.h" include nil nil [1 18])
+            ("stdio.h" include (:system-flag t) nil [19 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("string.h" include (:system-flag t) nil [58 77])
+            ("PUBLIC" variable (:constant-flag t) nil [87 93])
+            ("PRIVATE" variable (:constant-flag t) nil [102 109])
+            ("CreateQueue" function
+               (:arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144 156])
+                    ("width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157 170]))                  
+                :type ("HQUEUE" type (:type "class") nil nil))
+                nil [125 476])
+            ("CloseQueue" function
+               (:arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [501 515]))                  
+                :type "void")
+                nil [485 559])
+            ("PutQueue" function
+               (:arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [582 596])
+                    ("pItem" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [597 615]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [568 880])
+            ("GetQueue" function
+               (:arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [903 917])
+                    ("pItem" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [918 930]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [889 1240])
+            ("IsEmptyQueue" function
+               (:arguments 
+                  ( ("hQueue" variable (:type ("HQUEUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1267 1281]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [1249 1312]))          
+      :file "list.c"
+      :pointmax 1313
+      :fsize 1312
+      :lastmodtime '(23412 54159 51354 735000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PRIVATE" . ((STATIC "static" 110 . 116)))
+          ("PUBLIC")
+          )
+))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!Tutor6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

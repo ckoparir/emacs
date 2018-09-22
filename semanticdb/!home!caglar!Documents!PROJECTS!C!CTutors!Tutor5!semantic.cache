@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor5.out")) nil [1 16])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [17 32])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [33 57])
+            ("$(PKG)" function (:arguments ("main.c")) nil [57 124])
+            ("clean" function nil nil [124 182])
+            ("install" function (:arguments ("$(PKG)")) nil [183 263]))          
+      :file "Makefile"
+      :pointmax 291
+      :fsize 290
+      :lastmodtime '(23412 13632 659535 148000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("time.h" include (:system-flag t) nil [60 77])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("STDC_METHOD" variable (:constant-flag t) nil [87 98])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [128 133]))                  
+                :type "int")
+                nil [119 509])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [545 550]))                  
+                :type "int")
+                nil [536 1153]))          
+      :file "main.c"
+      :pointmax 1161
+      :fsize 1160
+      :lastmodtime '(23412 17370 354655 3000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SYS_METHOD")
+          ("STDC_METHOD")
+          )
+))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!Tutor5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

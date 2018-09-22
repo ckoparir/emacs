@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("global")) nil [530 551])
+            ("global_SOURCES" variable (:default-value ("global.c" "literal.c" "output.c" "convert.c")) nil [552 607])
+            ("noinst_HEADERS" variable (:default-value ("literal.h" "convert.h" "output.h")) nil [608 654])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DLID='\"$(LID)\"'")) nil [655 700])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [701 717])
+            ("global_LDADD" variable (:default-value ("$(LDADD)" "$(LIBLTDL)")) nil [718 753])
+            ("global_DEPENDENCIES" variable (:default-value ("$(LDADD)" "$(LTDLDEPS)")) nil [753 796])
+            ("man_MANS" variable (:default-value ("global.1")) nil [797 817])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "const.h" "manual.in")) nil [818 861]))          
+      :file "Makefile.am"
+      :pointmax 861
+      :fsize 860
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!global!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

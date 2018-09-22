@@ -1,0 +1,84 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+;; Path definition for themes and packages will be installed
+(let ((default-directory  "~/.emacs.d/lisp/"))
+  (setq load-path
+        (append
+         (let ((load-path  (copy-sequence load-path))) ;; Shadow
+           (normal-top-level-add-subdirs-to-load-path))
+         load-path)))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (solarized)))
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(package-selected-packages
+   (quote
+    (which-key yasnippet yasnippet-classic-snippets company)))
+ '(safe-local-variable-values (quote ((flycheck-gcc-language-standard . c++11)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; initialize solarized theme and set as default
+(require 'color-theme)
+(require 'color-theme-solarized)
+(load-theme 'solarized t)
+
+;; initialize highlight indentation mode
+(require 'highlight-indentation)
+(add-hook 'after-init-hook 'highlight-indentation-current-column-mode)
+
+;; set default modes initially
+(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'after-init-hook 'yas-global-mode)
+(add-hook 'after-init-hook 'which-key-mode)
+(add-hook 'after-init-hook 'global-display-line-numbers-mode)
+(add-hook 'after-init-hook 'display-battery-mode)
+(add-hook 'after-init-hook 'column-number-mode)
+
+;; display line numbers initally
+(display-line-numbers-mode 1)
+
+;; highlight curent line
+(hl-line-mode 1)
+
+;; auto close bracket insertion. New in emacs 24
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+
+;; definition for killing all other buffers except current
+(defun kill-other-buffers ()
+      "Kill all other buffers."
+      (interactive)
+      (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+;; set default keyboard sortcut for kill-other-buffers() function
+(global-set-key (kbd "C-x C-b") 'kill-other-buffers)
+
+;; Modeline settings
+;; Show 24-hour time and date on status bar
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(display-time)
+
+;; default coding
+(prefer-coding-system 'utf-8)
+
+;; Numbered Backups
+(setq version-control t)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+

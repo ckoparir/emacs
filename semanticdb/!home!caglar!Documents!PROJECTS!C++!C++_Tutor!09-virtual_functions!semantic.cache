@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [101 120])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [122 142])
+            ("base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [158 165])
+                    ("show" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [207 231])
+                    ("func" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [255 311]))                  
+                :type "class")
+                nil [144 314])
+            ("derived1" type
+               (:superclasses 
+                  ( ("base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [385 392])
+                    ("show" function (:type "void") (reparse-symbol classsubparts) [395 439]))                  
+                :type "class")
+                nil [345 499])
+            ("derived2" type
+               (:superclasses 
+                  ( ("base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("derived1" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [566 573])
+                    ("show" function (:type "void") (reparse-symbol classsubparts) [576 620])
+                    ("func" function (:type "void") (reparse-symbol classsubparts) [623 675]))                  
+                :type "class")
+                nil [501 678])
+            ("fc" function
+               (:arguments 
+                  ( ("r" variable
+                       (:reference 1
+                        :type ("base" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [730 738]))                  
+                :type "void")
+                nil [722 754])
+            ("main" function (:type "int") nil [756 1048]))          
+      :file "main.cpp"
+      :pointmax 1049
+      :fsize 1048
+      :lastmodtime '(23460 54828 536208 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("virtual.out")) nil [1 17])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-g")) nil [18 46])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [47 98]))          
+      :file "Makefile"
+      :pointmax 98
+      :fsize 97
+      :lastmodtime '(23457 24692 412473 850000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!09-virtual_functions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

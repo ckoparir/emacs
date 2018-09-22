@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("gtags-cscope")) nil [530 558])
+            ("gtags_cscope_SOURCES" variable (:default-value ("gtags-cscope.c" "alloc.c" "alloc.h" "basename.c" "build.c" "build.h" "command.c" "constants.h" "display.c" "edit.c" "exec.c" "find.c" "global-cscope.h" "help.c" "history.c" "input.c" "library.h" "logdir.c" "mouse.c" "mygetenv.c" "mypopen.c" "version-cscope.h")) nil [559 811])
+            ("AM_CPPFLAGS" variable (:default-value ("$(CURSES_INCLUDEDIR)" "@AM_CPPFLAGS@")) nil [812 861])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [862 878])
+            ("gtags_cscope_LDADD" variable (:default-value ("$(LDADD)" "$(LIBLTDL)" "$(CURSES_LIBS)")) nil [879 935])
+            ("gtags_cscope_DEPENDENCIES" variable (:default-value ("$(LDADD)" "$(LTDLDEPS)")) nil [936 985])
+            ("man_MANS" variable (:default-value ("gtags-cscope.1")) nil [986 1012])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "const.h" "manual.in")) nil [1013 1056]))          
+      :file "Makefile.am"
+      :pointmax 1056
+      :fsize 1055
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!gtags-cscope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [97 115])
+            ("Sort" function
+               (:arguments 
+                  ( ("pvArray" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [127 141])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [142 156])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [157 172])
+                    ("Compare" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [102 115])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [116 129]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "void")
+                nil [117 650])
+            ("Compare" function
+               (:arguments 
+                  ( ("pv1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [665 681])
+                    ("pv2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [682 698]))                  
+                :type "int")
+                nil [652 863])
+            ("PrintArr" function
+               (:arguments 
+                  ( ("pv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [879 894])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [895 909])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [910 925]))                  
+                :type "void")
+                nil [865 1144])
+            ("main" function (:type "int") nil [1146 1674]))          
+      :file "main.c"
+      :pointmax 1675
+      :fsize 1674
+      :lastmodtime '(23415 37242 358632 898000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!04!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

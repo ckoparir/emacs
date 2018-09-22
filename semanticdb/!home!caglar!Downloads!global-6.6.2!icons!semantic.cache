@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("icons_DATA" variable (:default-value ("index.png" "c.png" "text.png" "dir.png" "back.png" "help.png" "first.png" "last.png" "left.png" "right.png" "top.png" "bottom.png" "n_first.png" "n_last.png" "n_left.png" "n_right.png" "n_top.png" "n_bottom.png" "pglobe.png")) nil [530 740])
+            ("iconsdir" variable (:default-value ("${datadir}/gtags/icons")) nil [740 774])
+            ("EXTRA_DIST" variable (:default-value ("${icons_DATA}")) nil [775 802]))          
+      :file "Makefile.am"
+      :pointmax 802
+      :fsize 801
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!icons!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

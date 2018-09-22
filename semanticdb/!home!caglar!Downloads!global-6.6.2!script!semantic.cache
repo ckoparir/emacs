@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("script_DATA" variable (:default-value ("less-global" "elvis-global" "global-client" "gtags-client" "htags-client")) nil [530 609])
+            ("scriptdir" variable (:default-value ("${datadir}/gtags/script")) nil [609 645])
+            ("gtags_DATA" variable (:default-value ("SERVERSIDE_HOWTO")) nil [646 676])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [676 704])
+            ("EXTRA_DIST" variable (:default-value ("${script_DATA}" "${gtags_DATA}")) nil [705 747])
+            ("gtags-client" function nil nil [748 793])
+            ("htags-client" function nil nil [793 838])
+            ("install-data-hook" function nil nil [838 990]))          
+      :file "Makefile.am"
+      :pointmax 990
+      :fsize 989
+      :lastmodtime '(23166 1324 0 0)
+      :unmatched-syntax '((shell-command 858 . 989) (bol 857 . 857))))
+  :file "!home!caglar!Downloads!global-6.6.2!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

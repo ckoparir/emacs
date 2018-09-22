@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50 55]))                  
+                :type "int")
+                nil [41 798])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [779 783]))                  
+                :type "int")
+                nil [774 784]))          
+      :file "main.c"
+      :pointmax 799
+      :fsize 798
+      :lastmodtime '(23415 18283 484673 64000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("scan")) nil [1 10])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [11 26])
+            ("CFLAGS" variable (:default-value ("-lncurses")) nil [27 63])
+            ("$(PKG)" function (:arguments ("main.c")) nil [63 130])
+            ("clean" function nil nil [130 188])
+            ("install" function (:arguments ("$(PKG)")) nil [189 269]))          
+      :file "Makefile"
+      :pointmax 297
+      :fsize 290
+      :lastmodtime '(23415 19995 828461 504000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("test" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [86 97])
+                    ("sname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [100 112])
+                    ("age" variable (:type "int") (reparse-symbol classsubparts) [115 123])
+                    ("id" variable (:type "long") (reparse-symbol classsubparts) [126 134]))                  
+                :type "struct")
+                nil [62 141])
+            ("test" type
+               (:typedef ("test" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [62 141])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [215 220]))                  
+                :type "int")
+                nil [206 622]))          
+      :file "main.cc"
+      :pointmax 623
+      :fsize 622
+      :lastmodtime '(23415 40067 530507 386000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

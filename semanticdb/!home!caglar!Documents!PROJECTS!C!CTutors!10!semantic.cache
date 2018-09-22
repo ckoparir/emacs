@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [104 122])
+            ("stdlib.h" include (:system-flag t) nil [123 142])
+            ("string.h" include (:system-flag t) nil [143 162])
+            ("NO_COLOR" variable (:constant-flag t) nil [172 180])
+            ("stNode" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [237 246])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("stNode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [249 269]))                  
+                :type "struct")
+                nil [211 284])
+            ("hNode" type
+               (:typedef ("stNode" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [211 284])
+            ("Node" type
+               (:typedef ("stNode" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [211 284])
+            ("printbackward" function
+               (:arguments 
+                  ( ("node" variable (:type ("hNode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [346 357]))                  
+                :type "void")
+                nil [327 448])
+            ("printList" function
+               (:arguments 
+                  ( ("node" variable (:type ("hNode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 508])
+                    ("color_index" variable (:type "int") (reparse-symbol arg-sub-list) [509 525]))                  
+                :type "void")
+                nil [482 746])
+            ("push" function
+               (:arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :type ("hNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [785 796])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [797 806]))                  
+                :type "void")
+                nil [775 932])
+            ("append" function
+               (:arguments 
+                  ( ("ref" variable
+                       (:pointer 1
+                        :type ("hNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [975 986])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [987 996]))                  
+                :type "void")
+                nil [963 1295])
+            ("insertAfter" function
+               (:arguments 
+                  ( ("prev_node" variable (:type ("hNode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1375 1391])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1392 1401]))                  
+                :type "void")
+                nil [1358 1648])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1659 1664]))                  
+                :type "int")
+                nil [1650 3075]))          
+      :file "main.c"
+      :pointmax 3076
+      :fsize 3075
+      :lastmodtime '(23426 45248 379812 921000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor10.out")) nil [1 17])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [18 33])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [34 58])
+            ("$(PKG)" function (:arguments ("main.c")) nil [58 125])
+            ("clean" function nil nil [125 183])
+            ("install" function (:arguments ("$(PKG)")) nil [184 264]))          
+      :file "Makefile"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(23422 31520 114877 753000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!10!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

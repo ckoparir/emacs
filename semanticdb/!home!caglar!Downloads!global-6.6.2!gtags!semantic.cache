@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("gtags")) nil [530 550])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@")) nil [551 579])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [580 596])
+            ("gtags_LDADD" variable (:default-value ("$(LDADD)" "$(LIBLTDL)")) nil [597 631])
+            ("gtags_DEPENDENCIES" variable (:default-value ("$(LDADD)" "$(LTDLDEPS)")) nil [631 673])
+            ("man_MANS" variable (:default-value ("gtags.1")) nil [674 693])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "const.h" "manual.in")) nil [694 737]))          
+      :file "Makefile.am"
+      :pointmax 737
+      :fsize 736
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!gtags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

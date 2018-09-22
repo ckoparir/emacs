@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libglodb.a")) nil [536 566])
+            ("noinst_HEADERS" variable (:default-value ("btree.h" "db.h" "extern.h" "mpool.h" "queue.h" "compat.h")) nil [567 631])
+            ("libglodb_a_SOURCES" variable (:default-value ("bt_close.c" "bt_conv.c" "bt_debug.c" "bt_delete.c" "bt_get.c" "bt_open.c" "bt_overflow.c" "bt_page.c" "bt_put.c" "bt_search.c" "bt_seq.c" "bt_split.c" "bt_utils.c" "db.c" "mpool.c")) nil [632 809])
+            ("libglodb_a_DEPENDENCIES" variable (:default-value ("$(libglodb_a_LIBADD)")) nil [810 857]))          
+      :file "Makefile.am"
+      :pointmax 857
+      :fsize 856
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!libdb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

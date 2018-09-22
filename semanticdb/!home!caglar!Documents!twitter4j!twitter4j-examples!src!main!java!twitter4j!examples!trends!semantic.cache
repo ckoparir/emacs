@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("twitter4j.examples.trends" package nil nil [46 80]))          
+      :file "package-info.java"
+      :pointmax 80
+      :fsize 79
+      :lastmodtime '(23403 21047 944710 674000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!twitter4j!twitter4j-examples!src!main!java!twitter4j!examples!trends!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

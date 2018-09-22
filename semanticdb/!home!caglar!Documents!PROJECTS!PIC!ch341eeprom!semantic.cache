@@ -1,0 +1,336 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("libusb-1.0/libusb.h" include (:system-flag t) nil [872 902])
+            ("sys/errno.h" include (:system-flag t) nil [904 926])
+            ("stdio.h" include (:system-flag t) nil [927 945])
+            ("stdlib.h" include (:system-flag t) nil [946 965])
+            ("stdint.h" include (:system-flag t) nil [966 985])
+            ("string.h" include (:system-flag t) nil [986 1005])
+            ("inttypes.h" include (:system-flag t) nil [1006 1027])
+            ("getopt.h" include (:system-flag t) nil [1028 1047])
+            ("limits.h" include (:system-flag t) nil [1048 1067])
+            ("ch341eeprom.h" include nil nil [1068 1092])
+            ("debugout" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1094 1119])
+            ("verbout" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1094 1119])
+            ("readbuf" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1120 1144])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1155 1164])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1165 1177]))                  
+                :type "int")
+                nil [1146 9262]))          
+      :file "ch341eeprom.c"
+      :pointmax 9264
+      :fsize 9263
+      :lastmodtime '(23408 35946 409152 567000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CH341TOOLVERSION" variable (:constant-flag t) nil [107 123])
+            ("USB_LOCK_VENDOR" variable (:constant-flag t) nil [150 165])
+            ("USB_LOCK_PRODUCT" variable (:constant-flag t) nil [229 245])
+            ("MAX_EEPROM_SIZE" variable (:constant-flag t) nil [318 333])
+            ("MAX_EEPROM_SIZE" variable (:constant-flag t) nil [318 333])
+            ("MAX_EEPROM_SIZE" variable (:constant-flag t) nil [318 333])
+            ("MAX_EEPROM_SIZE" variable (:constant-flag t) nil [318 333])
+            ("MAX_EEPROM_SIZE" variable (:constant-flag t) nil [318 333])
+            ("BULK_WRITE_ENDPOINT" variable (:constant-flag t) nil [379 398])
+            ("BULK_READ_ENDPOINT" variable (:constant-flag t) nil [420 438])
+            ("DEFAULT_INTERFACE" variable (:constant-flag t) nil [461 478])
+            ("DEFAULT_CONFIGURATION" variable (:constant-flag t) nil [503 524])
+            ("DEFAULT_TIMEOUT" variable (:constant-flag t) nil [544 559])
+            ("IN_BUF_SZ" variable (:constant-flag t) nil [614 623])
+            ("EEPROM_WRITE_BUF_SZ" variable (:constant-flag t) nil [656 675])
+            ("EEPROM_READ_BULKIN_BUF_SZ" variable (:constant-flag t) nil [728 753])
+            ("EEPROM_READ_BULKOUT_BUF_SZ" variable (:constant-flag t) nil [769 795])
+            ("mCH341_PACKET_LENGTH" variable (:constant-flag t) nil [919 939])
+            ("mCH341_PKT_LEN_SHORT" variable (:constant-flag t) nil [952 972])
+            ("mCH341_ENDP_INTER_UP" variable (:constant-flag t) nil [985 1005])
+            ("mCH341_ENDP_INTER_DOWN" variable (:constant-flag t) nil [1020 1042])
+            ("mCH341_ENDP_DATA_UP" variable (:constant-flag t) nil [1057 1076])
+            ("mCH341_ENDP_DATA_DOWN" variable (:constant-flag t) nil [1091 1112])
+            ("mCH341_VENDOR_READ" variable (:constant-flag t) nil [1128 1146])
+            ("mCH341_VENDOR_WRITE" variable (:constant-flag t) nil [1161 1180])
+            ("mCH341_PARA_INIT" variable (:constant-flag t) nil [1196 1212])
+            ("mCH341_I2C_STATUS" variable (:constant-flag t) nil [1227 1244])
+            ("mCH341_I2C_COMMAND" variable (:constant-flag t) nil [1259 1277])
+            ("mCH341_PARA_CMD_R0" variable (:constant-flag t) nil [1293 1311])
+            ("mCH341_PARA_CMD_R1" variable (:constant-flag t) nil [1326 1344])
+            ("mCH341_PARA_CMD_W0" variable (:constant-flag t) nil [1359 1377])
+            ("mCH341_PARA_CMD_W1" variable (:constant-flag t) nil [1392 1410])
+            ("mCH341_PARA_CMD_STS" variable (:constant-flag t) nil [1425 1444])
+            ("mCH341A_CMD_SET_OUTPUT" variable (:constant-flag t) nil [1460 1482])
+            ("mCH341A_CMD_IO_ADDR" variable (:constant-flag t) nil [1497 1516])
+            ("mCH341A_CMD_PRINT_OUT" variable (:constant-flag t) nil [1531 1552])
+            ("mCH341A_CMD_SPI_STREAM" variable (:constant-flag t) nil [1567 1589])
+            ("mCH341A_CMD_SIO_STREAM" variable (:constant-flag t) nil [1604 1626])
+            ("mCH341A_CMD_I2C_STREAM" variable (:constant-flag t) nil [1641 1663])
+            ("mCH341A_CMD_UIO_STREAM" variable (:constant-flag t) nil [1678 1700])
+            ("mCH341A_BUF_CLEAR" variable (:constant-flag t) nil [1716 1733])
+            ("mCH341A_I2C_CMD_X" variable (:constant-flag t) nil [1748 1765])
+            ("mCH341A_DELAY_MS" variable (:constant-flag t) nil [1780 1796])
+            ("mCH341A_GET_VER" variable (:constant-flag t) nil [1811 1826])
+            ("mCH341_EPP_IO_MAX" variable (:constant-flag t) nil [1843 1860])
+            ("mCH341A_EPP_IO_MAX" variable (:constant-flag t) nil [1899 1917])
+            ("mCH341A_CMD_IO_ADDR_W" variable (:constant-flag t) nil [1933 1954])
+            ("mCH341A_CMD_IO_ADDR_R" variable (:constant-flag t) nil [1969 1990])
+            ("mCH341A_CMD_I2C_STM_STA" variable (:constant-flag t) nil [2006 2029])
+            ("mCH341A_CMD_I2C_STM_STO" variable (:constant-flag t) nil [2044 2067])
+            ("mCH341A_CMD_I2C_STM_OUT" variable (:constant-flag t) nil [2082 2105])
+            ("mCH341A_CMD_I2C_STM_IN" variable (:constant-flag t) nil [2120 2142])
+            ("mCH341A_CMD_I2C_STM_MAX" variable (:constant-flag t) nil [2157 2180])
+            ("mCH341A_CMD_I2C_STM_SET" variable (:constant-flag t) nil [2228 2251])
+            ("mCH341A_CMD_I2C_STM_US" variable (:constant-flag t) nil [2266 2288])
+            ("mCH341A_CMD_I2C_STM_MS" variable (:constant-flag t) nil [2303 2325])
+            ("mCH341A_CMD_I2C_STM_DLY" variable (:constant-flag t) nil [2340 2363])
+            ("mCH341A_CMD_I2C_STM_END" variable (:constant-flag t) nil [2378 2401])
+            ("mCH341A_CMD_UIO_STM_IN" variable (:constant-flag t) nil [2417 2439])
+            ("mCH341A_CMD_UIO_STM_DIR" variable (:constant-flag t) nil [2454 2477])
+            ("mCH341A_CMD_UIO_STM_OUT" variable (:constant-flag t) nil [2492 2515])
+            ("mCH341A_CMD_UIO_STM_US" variable (:constant-flag t) nil [2530 2552])
+            ("mCH341A_CMD_UIO_STM_END" variable (:constant-flag t) nil [2567 2590])
+            ("mCH341_PARA_MODE_EPP" variable (:constant-flag t) nil [2606 2626])
+            ("mCH341_PARA_MODE_EPP17" variable (:constant-flag t) nil [2641 2663])
+            ("mCH341_PARA_MODE_EPP19" variable (:constant-flag t) nil [2678 2700])
+            ("mCH341_PARA_MODE_MEM" variable (:constant-flag t) nil [2715 2735])
+            ("CH341_I2C_LOW_SPEED" variable (:constant-flag t) nil [2752 2771])
+            ("CH341_I2C_STANDARD_SPEED" variable (:constant-flag t) nil [2832 2856])
+            ("CH341_I2C_FAST_SPEED" variable (:constant-flag t) nil [2903 2923])
+            ("CH341_I2C_HIGH_SPEED" variable (:constant-flag t) nil [2970 2990])
+            ("CH341_EEPROM_READ_SETUP_CMD" variable (:constant-flag t) nil [3176 3203])
+            ("CH341_EEPROM_READ_NEXT_CMD" variable (:constant-flag t) nil [3880 3906])
+            ("CH341_EEPROM_READ_CMD_SZ" variable (:constant-flag t) nil [4569 4593])
+            ("MIN" variable (:constant-flag t) nil [4608 4611])
+            ("MAX" variable (:constant-flag t) nil [4645 4648])
+            ("TRUE" variable (:constant-flag t) nil [4683 4687])
+            ("FALSE" variable (:constant-flag t) nil [4701 4706])
+            ("EEPROM" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4732 4743])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4748 4762]))                  
+                :type "struct")
+                nil [4712 4765])
+            ("eepromlist" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"24c01\",   128   }, // 16 pages of 8 bytes each = 128 bytes
+  { \"24c02\",   256   }, // 32 pages of 8 bytes each = 256 bytes
+  { \"24c04\",   512   }, // 32 pages of 16 bytes each = 512 bytes
+  { \"24c08\",   1024  }, // 64 pages of 16 bytes each = 1024 bytes
+  { \"24c16\",   2048  }, // 128 pages of 16 bytes each = 2048 bytes
+  { \"24c32\",   4096  }, // 32kbit = 4kbyte
+  { \"24c64\",   8192  },
+  { \"24c128\",  16384 },
+  { \"24c256\",  32768 },
+  { \"24c512\",  65536 },
+  { \"24c1024\", 131072},
+  { 0, 0}
+}"
+                :type ("EEPROM" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4767 5312])
+            ("ch341readEEPROM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("devHandle" variable
+                       (:pointer 1
+                        :type ("libusb_device_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5339 5378])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5379 5392])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5393 5408]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5315 5409])
+            ("ch341writeEEPROM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("devHandle" variable
+                       (:pointer 1
+                        :type ("libusb_device_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5435 5474])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5475 5488])
+                    ("bytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5489 5504]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5410 5505])
+            ("ch341configure" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5550 5563])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5564 5577]))                  
+                :type ("libusb_device_handle" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5506 5578])
+            ("ch341setstream" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("devHandle" variable
+                       (:pointer 1
+                        :type ("libusb_device_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5602 5641])
+                    ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5642 5657]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5579 5658])
+            ("parseEEPsize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("eepromname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5680 5697]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5659 5698])
+            ("cbBulkIn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("transfer" variable
+                       (:pointer 1
+                        :type ("libusb_transfer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5760 5793]))                  
+                :type "void")
+                nil [5746 5794])
+            ("cbBulkOut" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("transfer" variable
+                       (:pointer 1
+                        :type ("libusb_transfer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5810 5843]))                  
+                :type "void")
+                nil [5795 5844]))          
+      :file "ch341eeprom.h"
+      :pointmax 5845
+      :fsize 5844
+      :lastmodtime '(23408 37207 76661 337000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("mCH341_ENDP_DATA_UP" . ((number "0x82" 1069 . 1073)))
+          ("mCH341_VENDOR_READ" . ((number "0xC0" 1139 . 1143)))
+          ("mCH341_VENDOR_WRITE" . ((number "0x40" 1173 . 1177)))
+          ("mCH341A_CMD_PRINT_OUT" . ((number "0xA3" 1545 . 1549)))
+          ("mCH341_EPP_IO_MAX" . ((semantic-list "( mCH341_PACKET_LENGTH - 1 )" 1853 . 1881)))
+          ("mCH341A_CMD_IO_ADDR_W" . ((number "0x00" 1947 . 1951)))
+          ("DEFAULT_INTERFACE" . ((number "0x00" 480 . 484)))
+          ("mCH341A_CMD_UIO_STM_IN" . ((number "0x00" 2432 . 2436)))
+          ("mCH341_PARA_MODE_EPP" . ((number "0x00" 2619 . 2623)))
+          ("mCH341_PARA_MODE_EPP19" . ((number "0x01" 2693 . 2697)))
+          ("MAX" (spp-arg-list ("a" "b") 4639 . 4644) . ((semantic-list "(((a)>(b))?(a):(b))" 4645 . 4664)))
+          ("mCH341_PACKET_LENGTH" . ((number "32" 932 . 934)))
+          ("mCH341A_CMD_SET_OUTPUT" . ((number "0xA1" 1475 . 1479)))
+          ("mCH341A_GET_VER" . ((number "0x5F" 1820 . 1824)))
+          ("MIN" (spp-arg-list ("a" "b") 4602 . 4607) . ((semantic-list "(((a)<(b))?(a):(b))" 4608 . 4627)))
+          ("TRUE" . ((number "1" 4682 . 4683)))
+          ("CH341TOOLVERSION" . ((string "\"0.5\"" 135 . 140)))
+          ("mCH341_ENDP_INTER_DOWN" . ((number "0x01" 1035 . 1039)))
+          ("mCH341_ENDP_DATA_DOWN" . ((number "0x02" 1105 . 1109)))
+          ("mCH341A_CMD_I2C_STM_DLY" . ((number "0x0F" 2356 . 2360)))
+          ("mCH341A_CMD_UIO_STM_US" . ((number "0xC0" 2545 . 2549)))
+          ("FALSE" . ((number "0" 4700 . 4701)))
+          ("BULK_READ_ENDPOINT" . ((number "0x82" 439 . 443)))
+          ("IN_BUF_SZ" . ((number "0x100" 633 . 638)))
+          ("mCH341_ENDP_INTER_UP" . ((number "0x81" 998 . 1002)))
+          ("mCH341_PARA_INIT" . ((number "0xB1" 1205 . 1209)))
+          ("mCH341_I2C_STATUS" . ((number "0x52" 1237 . 1241)))
+          ("mCH341_PARA_CMD_R0" . ((number "0xAC" 1304 . 1308)))
+          ("mCH341A_CMD_SIO_STREAM" . ((number "0xA9" 1619 . 1623)))
+          ("mCH341A_CMD_UIO_STM_OUT" . ((number "0x80" 2508 . 2512)))
+          ("CH341_EEPROM_READ_NEXT_CMD" . 
+              ((string "\"\\xaa\\x74\\x83\\xa0\\x00\\x00\\x74\\x81\\xa1\\xe0\\x00\\x00\\x10\\x00\\x00\\x00\"" 3899 . 3965) (string "\"\\x00\\x00\\x00\\x00\\x8c\\xf1\\x12\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\"" 4004 . 4070) (string "\"\\xaa\\xe0\\x00\\x00\\x4c\\xf1\\x12\\x00\\x5d\\x22\\xd7\\x5a\\xdc\\xf1\\x12\\x00\"" 4109 . 4175) (string "\"\\x8f\\x04\\x44\\x7e\\x30\\x88\\x41\\x7e\\xff\\xff\\xff\\xff\\x2a\\x88\\x41\\x7e\"" 4214 . 4280) (string "\"\\xaa\\xe0\\x00\\x7e\\x00\\x00\\x00\\x00\\x69\\x0e\\x3c\\x00\\x12\\x01\\x19\\x00\"" 4319 . 4385) (string "\"\\x0f\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x9c\\x2e\\x68\\x00\"" 4424 . 4490) (string "\"\\xaa\\xdf\\xc0\\x75\\x00\"" 4529 . 4551)))
+          ("mCH341_PARA_CMD_R1" . ((number "0xAD" 1337 . 1341)))
+          ("mCH341A_CMD_I2C_STM_IN" . ((number "0xC0" 2135 . 2139)))
+          ("CH341_EEPROM_READ_SETUP_CMD" . 
+              ((string "\"\\xaa\\x74\\x83\\xa0\\x00\\x00\\x74\\x81\\xa1\\xe0\\x00\\x00\\x06\\x04\\x00\\x00\"" 3195 . 3261) (string "\"\\x00\\x00\\x00\\x00\\x40\\x00\\x00\\x00\\x11\\x4d\\x40\\x77\\xcd\\xab\\xba\\xdc\"" 3300 . 3366) (string "\"\\xaa\\xe0\\x00\\x00\\xc4\\xf1\\x12\\x00\\x11\\x4d\\x40\\x77\\xf0\\xf1\\x12\\x00\"" 3405 . 3471) (string "\"\\xd9\\x8b\\x41\\x7e\\x00\\xf0\\xfd\\x7f\\xf0\\xf1\\x12\\x00\\x5a\\x88\\x41\\x7e\"" 3510 . 3576) (string "\"\\xaa\\xe0\\x00\\x00\\x2a\\x88\\x41\\x7e\\x06\\x04\\x00\\x00\\x11\\x4d\\x40\\x77\"" 3615 . 3681) (string "\"\\xe8\\xf3\\x12\\x00\\x14\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\"" 3720 . 3786) (string "\"\\xaa\\xdf\\xc0\\x75\\x00\"" 3825 . 3847)))
+          ("USB_LOCK_VENDOR" . ((number "0x1a86" 178 . 184)))
+          ("EEPROM_READ_BULKOUT_BUF_SZ" . ((number "0x65" 788 . 792)))
+          ("mCH341_PKT_LEN_SHORT" . ((number "8" 965 . 966)))
+          ("mCH341_PARA_CMD_W0" . ((number "0xA6" 1370 . 1374)))
+          ("mCH341A_CMD_UIO_STREAM" . ((number "0xAB" 1693 . 1697)))
+          ("mCH341A_CMD_I2C_STM_OUT" . ((number "0x80" 2098 . 2102)))
+          ("mCH341_PARA_CMD_W1" . ((number "0xA7" 1403 . 1407)))
+          ("mCH341A_BUF_CLEAR" . ((number "0xB2" 1726 . 1730)))
+          ("mCH341A_CMD_IO_ADDR_R" . ((number "0x80" 1983 . 1987)))
+          ("mCH341A_CMD_I2C_STM_STA" . ((number "0x74" 2022 . 2026)))
+          ("mCH341A_CMD_I2C_STM_SET" . ((number "0x60" 2244 . 2248)))
+          ("mCH341A_CMD_I2C_STM_US" . ((number "0x40" 2281 . 2285)))
+          ("mCH341A_CMD_UIO_STM_END" . ((number "0x20" 2583 . 2587)))
+          ("CH341_EEPROM_READ_CMD_SZ" . ((number "0x65" 4585 . 4589)))
+          ("MAX_EEPROM_SIZE" . ((number "131072" 346 . 352)))
+          ("mCH341A_CMD_IO_ADDR" . ((number "0xA2" 1509 . 1513)))
+          ("mCH341A_DELAY_MS" . ((number "0x5E" 1789 . 1793)))
+          ("mCH341A_CMD_I2C_STM_STO" . ((number "0x75" 2060 . 2064)))
+          ("USB_LOCK_PRODUCT" . ((number "0x5512" 257 . 263)))
+          ("DEFAULT_TIMEOUT" . ((number "300" 563 . 566)))
+          ("EEPROM_READ_BULKIN_BUF_SZ" . ((number "0x20" 747 . 751)))
+          ("mCH341A_CMD_I2C_STM_MS" . ((number "0x50" 2318 . 2322)))
+          ("mCH341A_CMD_I2C_STM_END" . ((number "0x00" 2394 . 2398)))
+          ("BULK_WRITE_ENDPOINT" . ((number "0x02" 398 . 402)))
+          ("DEFAULT_CONFIGURATION" . ((number "0x01" 522 . 526)))
+          ("EEPROM_WRITE_BUF_SZ" . ((number "0x2b" 675 . 679)))
+          ("mCH341_I2C_COMMAND" . ((number "0x53" 1270 . 1274)))
+          ("mCH341_PARA_CMD_STS" . ((number "0xA0" 1437 . 1441)))
+          ("mCH341A_CMD_SPI_STREAM" . ((number "0xA8" 1582 . 1586)))
+          ("mCH341A_EPP_IO_MAX" . ((number "0xFF" 1910 . 1914)))
+          ("mCH341A_CMD_I2C_STM_MAX" . ((semantic-list "( min( 0x3F, mCH341_PACKET_LENGTH ) )" 2173 . 2210)))
+          ("mCH341A_CMD_UIO_STM_DIR" . ((number "0x40" 2470 . 2474)))
+          ("mCH341_PARA_MODE_MEM" . ((number "0x02" 2728 . 2732)))
+          ("CH341_I2C_LOW_SPEED" . ((number "0" 2763 . 2764)))
+          ("CH341_I2C_STANDARD_SPEED" . ((number "1" 2848 . 2849)))
+          ("CH341_I2C_FAST_SPEED" . ((number "2" 2915 . 2916)))
+          ("CH341_I2C_HIGH_SPEED" . ((number "3" 2982 . 2983)))
+          ("mCH341A_CMD_I2C_STREAM" . ((number "0xAA" 1656 . 1660)))
+          ("mCH341A_I2C_CMD_X" . ((number "0x54" 1758 . 1762)))
+          ("mCH341_PARA_MODE_EPP17" . ((number "0x00" 2656 . 2660)))
+          )
+))
+  :file "!home!caglar!Documents!PROJECTS!PIC!ch341eeprom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

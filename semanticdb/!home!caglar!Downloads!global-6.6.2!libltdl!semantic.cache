@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "../m4")) nil [1440 1467])
+            ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [1467 1494])
+            ("AM_CPPFLAGS" variable nil nil [1494 1508])
+            ("AM_LDFLAGS" variable nil nil [1508 1521])
+            ("BUILT_SOURCES" variable nil nil [1521 1537])
+            ("include_HEADERS" variable nil nil [1537 1555])
+            ("noinst_LTLIBRARIES" variable nil nil [1555 1576])
+            ("lib_LTLIBRARIES" variable nil nil [1576 1594])
+            ("EXTRA_LTLIBRARIES" variable nil nil [1594 1614])
+            ("EXTRA_DIST" variable nil nil [1614 1627])
+            ("CLEANFILES" variable nil nil [1627 1640])
+            ("MOSTLYCLEANFILES" variable nil nil [1640 1659])
+            ("AM_CPPFLAGS" variable (:default-value ("-DLT_CONFIG_H='<$(LT_CONFIG_H)>'" "-DLTDL" "-I." "-I$(srcdir)" "-Ilibltdl" "-I$(srcdir)/libltdl")) nil [1776 1898])
+            ("AM_LDFLAGS" variable (:default-value ("-no-undefined")) nil [1898 1933])
+            ("LTDL_VERSION_INFO" variable (:default-value ("-version-info" "10:1:3")) nil [1933 1974])
+            ("noinst_LTLIBRARIES" variable (:default-value ("$(LT_DLLOADERS)")) nil [1975 2013])
+            ("ltdlincludedir" variable (:default-value ("$(includedir)/libltdl")) nil [2030 2070])
+            ("ltdlinclude_HEADERS" variable (:default-value ("libltdl/lt_system.h" "libltdl/lt_error.h" "libltdl/lt_dlloader.h")) nil [2070 2167])
+            ("include_HEADERS" variable (:default-value ("ltdl.h")) nil [2167 2200])
+            ("lib_LTLIBRARIES" variable (:default-value ("libltdl.la")) nil [2200 2237])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libltdlc.la")) nil [2264 2302])
+            ("libltdl_la_SOURCES" variable (:default-value ("libltdl/lt__alloc.h" "libltdl/lt__dirent.h" "libltdl/lt__glibc.h" "libltdl/lt__private.h" "libltdl/lt__strl.h" "libltdl/lt_dlloader.h" "libltdl/lt_error.h" "libltdl/lt_system.h" "libltdl/slist.h" "loaders/preopen.c" "lt__alloc.c" "lt_dlloader.c" "lt_error.c" "ltdl.c" "ltdl.h" "slist.c")) nil [2309 2691])
+            ("EXTRA_DIST" variable (:default-value ("lt__dirent.c" "lt__strl.c")) nil [2692 2744])
+            ("libltdl_la_CPPFLAGS" variable (:default-value ("-DLTDLOPEN=$(LTDLOPEN)" "$(AM_CPPFLAGS)")) nil [2745 2805])
+            ("libltdl_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "$(LTDL_VERSION_INFO)" "$(LT_DLPREOPEN)")) nil [2805 2877])
+            ("libltdl_la_LIBADD" variable (:default-value ("$(ltdl_LTLIBOBJS)")) nil [2877 2915])
+            ("libltdl_la_DEPENDENCIES" variable (:default-value ("$(LT_DLLOADERS)" "$(ltdl_LTLIBOBJS)")) nil [2915 2975])
+            ("libltdlc_la_SOURCES" variable (:default-value ("$(libltdl_la_SOURCES)")) nil [2976 3020])
+            ("libltdlc_la_CPPFLAGS" variable (:default-value ("-DLTDLOPEN=$(LTDLOPEN)c" "$(AM_CPPFLAGS)")) nil [3020 3082])
+            ("libltdlc_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "$(LT_DLPREOPEN)")) nil [3082 3134])
+            ("libltdlc_la_LIBADD" variable (:default-value ("$(libltdl_la_LIBADD)")) nil [3134 3176])
+            ("libltdlc_la_DEPENDENCIES" variable (:default-value ("$(libltdl_la_DEPENDENCIES)")) nil [3176 3229])
+            ("EXTRA_LTLIBRARIES" variable (:default-value ("dlopen.la")) nil [3482 3622])
+            ("dlopen_la_SOURCES" variable (:default-value ("loaders/dlopen.c")) nil [3623 3660])
+            ("dlopen_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [3660 3703])
+            ("dlopen_la_LIBADD" variable (:default-value ("$(LIBADD_DLOPEN)")) nil [3703 3739])
+            ("dld_link_la_SOURCES" variable (:default-value ("loaders/dld_link.c")) nil [3740 3781])
+            ("dld_link_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [3781 3826])
+            ("dld_link_la_LIBADD" variable (:default-value ("-ldld")) nil [3826 3853])
+            ("dyld_la_SOURCES" variable (:default-value ("loaders/dyld.c")) nil [3854 3888])
+            ("dyld_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [3888 3930])
+            ("load_add_on_la_SOURCES" variable (:default-value ("loaders/load_add_on.c")) nil [3931 3978])
+            ("load_add_on_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [3978 4026])
+            ("loadlibrary_la_SOURCES" variable (:default-value ("loaders/loadlibrary.c")) nil [4027 4074])
+            ("loadlibrary_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [4074 4122])
+            ("shl_load_la_SOURCES" variable (:default-value ("loaders/shl_load.c")) nil [4123 4164])
+            ("shl_load_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [4164 4209])
+            ("shl_load_la_LIBADD" variable (:default-value ("$(LIBADD_SHL_LOAD)")) nil [4209 4249])
+            ("CLEANFILES" variable (:default-value ("libltdl.la" "libltdlc.la" "libdlloader.la")) nil [4325 4401])
+            ("CLEANFILES" variable (:default-value ("$(ltdl_LIBOBJS)" "$(ltdl_LTLIBOBJS)")) nil [4486 4541])
+            ("EXTRA_DIST" variable (:default-value ("COPYING.LIB" "README")) nil [4542 4589])
+            ("BUILT_SOURCES" variable (:default-value ("libltdl/$(LT_ARGZ_H)")) nil [4693 4731])
+            ("EXTRA_DIST" variable (:default-value ("libltdl/lt__argz_.h" "lt__argz.c")) nil [4731 4783])
+            ("$(lib_OBJECTS)" function (:arguments ("$(LT_ARGZ_H)")) nil [4910 4949])
+            ("all-local" function (:arguments ("$(LT_ARGZ_H)")) nil [4910 4949])
+            ("libltdl/lt__argz.h" function (:arguments ("libltdl/lt__argz_.h")) nil [4949 5099])
+            ("MOSTLYCLEANFILES" variable (:default-value ("libltdl/lt__argz.h" "libltdl/lt__argz.h-t")) nil [5099 5167]))          
+      :file "Makefile.am"
+      :pointmax 5167
+      :fsize 5166
+      :lastmodtime '(23166 1331 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!libltdl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

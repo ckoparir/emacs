@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "auth.json"
+      :pointmax 2317
+      :fsize 2316
+      :lastmodtime '(23403 33496 660543 911000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

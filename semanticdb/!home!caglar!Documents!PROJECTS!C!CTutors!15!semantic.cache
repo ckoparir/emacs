@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [68 86])
+            ("unistd.h" include (:system-flag t) nil [87 106])
+            ("callback" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [133 138]))                  
+                :type "void")
+                nil [116 139])
+            ("register_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr_callback" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163 185]))                  
+                :type "void")
+                nil [140 186])
+            ("mysleep" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [201 206]))                  
+                :type "void")
+                nil [188 303])
+            ("main" function (:type "int") nil [305 441])
+            ("register_callback" function
+               (:arguments 
+                  ( ("ptr_callback" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 489]))                  
+                :type "void")
+                nil [443 567]))          
+      :file "main.c"
+      :pointmax 569
+      :fsize 568
+      :lastmodtime '(23437 38353 706643 152000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor15.out")) nil [1 17])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [18 33])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [34 58])
+            ("$(PKG)" function (:arguments ("main.c")) nil [58 125])
+            ("clean" function nil nil [125 183])
+            ("install" function (:arguments ("$(PKG)")) nil [184 264]))          
+      :file "Makefile"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(23437 30019 561658 811000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!15!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

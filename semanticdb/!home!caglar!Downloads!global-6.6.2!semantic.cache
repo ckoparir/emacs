@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("libglibc" "libutil" "libparser" "libltdl" "plugin-factory")) nil [542 602])
+            ("SUBDIRS" variable (:default-value ("global" "gozilla" "gtags" "htags" "htags-refkit" "htags-server" "globash" "doc" "icons" "jquery" "jquery/images" "script")) nil [654 767])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [825 853])
+            ("gtags_DATA" variable (:default-value ("AUTHORS" "COPYING" "COPYING.LIB" "ChangeLog" "FAQ" "INSTALL" "LICENSE" "NEWS" "README" "THANKS" "DONORS" "BUILD_TOOLS" "README.PATCHES" "gtags.conf" "gtags.el" "gtags.pl" "gtags.vim" "gtags-cscope.vim" "elvis.rc" "elvis-2.2_0.patch" "geco.rc" "vim74-gtags-cscope.patch")) nil [853 1112])
+            ("EXTRA_DIST" variable (:default-value ("${gtags_DATA}" "reconf.sh" "convert.pl" "mainpage.dox" "head.in")) nil [1113 1182])
+            ("doxygen" function nil nil [1183 1263]))          
+      :file "Makefile.am"
+      :pointmax 1391
+      :fsize 1390
+      :lastmodtime '(23166 1324 0 0)
+      :unmatched-syntax '((symbol 805 . 817) (punctuation 803 . 804) (punctuation 802 . 803) (symbol 794 . 801) (bol 786 . 786) (symbol 642 . 647) (punctuation 640 . 641) (punctuation 639 . 640) (symbol 631 . 638) (bol 623 . 623) (symbol 606 . 622) (punctuation 605 . 606) (IF 602 . 604) (bol 602 . 602))))
+  :file "!home!caglar!Downloads!global-6.6.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

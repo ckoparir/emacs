@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [168 187])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [188 208])
+            ("LoadShaders.h" include nil nil [209 233])
+            ("vgl.h" include nil nil [234 250])
+            ("VAO_IDs" type
+               (:members 
+                  ( ("Triangles" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [266 276])
+                    ("NumVAOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [277 286]))                  
+                :type "enum")
+                nil [251 287])
+            ("Buffer_IDs" type
+               (:members 
+                  ( ("ArrayBuffer" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [306 318])
+                    ("NumBuffers" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [319 331]))                  
+                :type "enum")
+                nil [288 332])
+            ("Attrib_IDs" type
+               (:members 
+                  ( ("vPosition" variable
+                       (:constant-flag t
+                        :default-value (363 364)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [351 364]))                  
+                :type "enum")
+                nil [333 367])
+            ("VAOs" variable
+               (:dereference 1
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [375 396])
+            ("Buffers" variable
+               (:dereference 1
+                :type "int")
+                nil [397 417])
+            ("NumVertices" variable
+               (:constant-flag t
+                :default-value "6"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [418 447])
+            ("init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [544 549]))                  
+                :type "void")
+                nil [534 1430])
+            ("display" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1533 1538]))                  
+                :type "void")
+                nil [1520 1671])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1767 1776])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1777 1789]))                  
+                :type "int")
+                nil [1758 2166]))          
+      :file "main.cpp"
+      :pointmax 2166
+      :unmatched-syntax '((symbol 368 . 374))))
+  :file "!home!caglar!Documents!PROJECTS!C++!OpenGL!01-Triangles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

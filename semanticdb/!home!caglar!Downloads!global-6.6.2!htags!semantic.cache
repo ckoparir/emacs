@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("htags")) nil [554 574])
+            ("htags_SOURCES" variable (:default-value ("htags.c" "defineindex.c" "dupindex.c" "fileindex.c" "cflowindex.c" "src2html.c" "anchor.c" "cache.c" "common.c" "incop.c" "path2url.c" "c.c" "cpp.c" "java.c" "php.c" "asm.c")) nil [575 742])
+            ("noinst_HEADERS" variable (:default-value ("htags.h" "anchor.h" "cache.h" "common.h" "incop.h" "path2url.h" "lexcommon.h")) nil [743 825])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-I$(srcdir)")) nil [826 866])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [867 883])
+            ("htags_DEPENDENCIES" variable (:default-value ("$(LDADD)")) nil [884 914])
+            ("man_MANS" variable (:default-value ("htags.1")) nil [915 934])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [935 963])
+            ("gtags_DATA" variable (:default-value ("global.cgi" "completion.cgi" "dot_htaccess" "jscode_suggest" "jscode_treeview" "style.css")) nil [963 1059])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "manual.in" "global.cgi.in" "completion.cgi.in" "dot_htaccess" "jscode_suggest" "jscode_treeview" "style.css" "const.h" "c.l" "cpp.l" "java.l" "php.l" "asm.l")) nil [1059 1225])
+            ("CLEANFILES" variable (:default-value ("global.cgi" "completion.cgi")) nil [1225 1264])
+            ("convert" variable (:default-value ("sed" "-e" "'s!@PERLPATH@!$(PERL)!g'" "-e" "'s!@GLOBALPATH@!$(bindir)/global!g'" "-e" "'s!@GENERATOR@!$(PACKAGE_STRING)!g'")) nil [1278 1396])
+            ("global.cgi" function (:arguments ("$(srcdir)/global.cgi.in" "Makefile")) nil [1396 1490])
+            ("completion.cgi" function (:arguments ("$(srcdir)/completion.cgi.in" "Makefile")) nil [1490 1600]))          
+      :file "Makefile.am"
+      :pointmax 1600
+      :fsize 1599
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax '((shell-command 1544 . 1599) (bol 1543 . 1543))))
+  :file "!home!caglar!Downloads!global-6.6.2!htags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,110 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("p18cxxx.h" include (:system-flag t) nil [911 931])
+            ("stdio.h" include (:system-flag t) nil [932 950])
+            ("usart.h" include (:system-flag t) nil [951 969])
+            ("usb.h" include nil nil [970 986])
+            ("CLK_48MHZ" variable (:constant-flag t) nil [1099 1108])
+            ("HIDFeatureBuffer" variable
+               (:dereference 1
+                :typemodifiers ("volatile")
+                :type "unsigned char")
+                nil [1383 1449])
+            ("low_interrupt" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1500 1505]))                  
+                :type "void")
+                nil [1480 1509])
+            ("txBuffer" variable
+               (:dereference 1
+                :type "char")
+                nil [1657 1695])
+            ("rxBuffer" variable
+               (:dereference 1
+                :type "char")
+                nil [1696 1735])
+            ("timestamp" variable
+               (:default-value "0"
+                :type "unsigned int")
+                nil [1736 1761])
+            ("transferType" variable
+               (:typemodifiers ("extern")
+                :type ("byte" type (:type "class") nil nil))
+                nil [1762 1787])
+            ("UserInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3576 3581]))                  
+                :type "void")
+                nil [3562 3752])
+            ("LOBYTE" variable (:constant-flag t) nil [3762 3768])
+            ("HIBYTE" variable (:constant-flag t) nil [3796 3802])
+            ("USBEcho" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3906 3911]))                  
+                :type "void")
+                nil [3886 4869])
+            ("ProcessIO" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5019 5024]))                  
+                :type "void")
+                nil [5004 5264])
+            ("SetupFeatureReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5460 5474]))                  
+                :type "void")
+                nil [5436 5667])
+            ("SetFeatureReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5868 5882]))                  
+                :type "void")
+                nil [5846 6260])
+            ("GetFeatureReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6339 6353]))                  
+                :type "void")
+                nil [6317 6857])
+            ("SetupOutputReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7217 7231]))                  
+                :type "void")
+                nil [7194 7391])
+            ("SetOutputReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7590 7604]))                  
+                :type "void")
+                nil [7569 7868])
+            ("GetInputReport" function
+               (:arguments 
+                  ( ("reportID" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7923 7937]))                  
+                :type "void")
+                nil [7903 8524])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8567 8572]))                  
+                :type "void")
+                nil [8557 9550]))          
+      :file "main.c"
+      :pointmax 9551
+      :fsize 9899
+      :lastmodtime '(19290 49668 0 0)
+      :unmatched-syntax '((symbol 1520 . 1524) (symbol 1513 . 1519) (punctuation 1512 . 1513) (number 1476 . 1479) (punctuation 1475 . 1476) (symbol 1465 . 1475) (symbol 1460 . 1464) (symbol 1453 . 1459) (punctuation 1452 . 1453) (symbol 1356 . 1359) (punctuation 1355 . 1356) (symbol 1350 . 1355) (punctuation 1348 . 1349) (symbol 1345 . 1348) (punctuation 1344 . 1345) (symbol 1339 . 1344) (punctuation 1337 . 1338) (symbol 1334 . 1337) (punctuation 1333 . 1334) (symbol 1330 . 1333) (punctuation 1328 . 1329) (symbol 1326 . 1328) (punctuation 1325 . 1326) (symbol 1319 . 1325) (punctuation 1317 . 1318) (symbol 1314 . 1317) (punctuation 1313 . 1314) (symbol 1307 . 1313) (punctuation 1305 . 1306) (symbol 1302 . 1305) (punctuation 1301 . 1302) (symbol 1295 . 1301) (punctuation 1293 . 1294) (symbol 1290 . 1293) (punctuation 1289 . 1290) (symbol 1284 . 1289) (symbol 1277 . 1283) (symbol 1270 . 1276) (punctuation 1269 . 1270) (symbol 1265 . 1268) (punctuation 1264 . 1265) (symbol 1261 . 1264) (punctuation 1259 . 1260) (symbol 1257 . 1259) (punctuation 1256 . 1257) (symbol 1250 . 1256) (punctuation 1248 . 1249) (number 1247 . 1248) (punctuation 1246 . 1247) (symbol 1242 . 1246) (punctuation 1240 . 1241) (symbol 1231 . 1240) (punctuation 1230 . 1231) (symbol 1227 . 1230) (punctuation 1225 . 1226) (symbol 1222 . 1225) (punctuation 1221 . 1222) (symbol 1217 . 1221) (punctuation 1215 . 1216) (symbol 1212 . 1215) (punctuation 1211 . 1212) (symbol 1207 . 1211) (symbol 1200 . 1206) (symbol 1193 . 1199) (punctuation 1192 . 1193) (symbol 1170 . 1178) (punctuation 1169 . 1170) (symbol 1165 . 1169) (punctuation 1163 . 1164) (number 1162 . 1163) (punctuation 1161 . 1162) (symbol 1155 . 1161) (punctuation 1153 . 1154) (symbol 1144 . 1153) (punctuation 1143 . 1144) (symbol 1137 . 1143) (punctuation 1135 . 1136) (number 1134 . 1135) (punctuation 1133 . 1134) (symbol 1127 . 1133) (symbol 1120 . 1126) (symbol 1113 . 1119) (punctuation 1112 . 1113))
+      :lexical-table 
+        '(("HIBYTE" (spp-arg-list ("x") 3802 . 3805) . ((semantic-list "(*(((char *)&x)+1))" 3806 . 3825)))
+          ("LOBYTE" (spp-arg-list ("x") 3768 . 3771) . ((semantic-list "(*((char *)&x))" 3772 . 3787)))
+          ("CLK_48MHZ" . ((number "1" 1109 . 1110)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "usb.h"
+      :fsize 5281
+      :lastmodtime '(19068 62230 0 0)))
+  :file "!home!caglar!Downloads!PICHID_MPLAB!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,85 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("stData" type
+               (:members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [87 98])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [101 113]))                  
+                :type "struct")
+                nil [61 129])
+            ("PDATA" type
+               (:typedef ("stData" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [61 129])
+            ("DATA" type
+               (:typedef ("stData" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [61 129])
+            ("CreateData" function
+               (:arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148 160]))                  
+                :type ("PDATA" type (:type "class") nil nil))
+                nil [131 374])
+            ("CloseData" function
+               (:arguments 
+                  ( ("pData" variable (:type ("PDATA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [391 403]))                  
+                :type "void")
+                nil [376 420])
+            ("PutData" function
+               (:arguments 
+                  ( ("pData" variable (:type ("PDATA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [434 446])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [447 464]))                  
+                :type "int")
+                nil [422 545])
+            ("GetData" function
+               (:arguments 
+                  ( ("pData" variable (:type ("PDATA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [559 571])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [572 583]))                  
+                :type "int")
+                nil [547 664])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [675 680]))                  
+                :type "int")
+                nil [666 940]))          
+      :file "main.c"
+      :pointmax 941
+      :fsize 940
+      :lastmodtime '(23412 61882 594316 943000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor7.out")) nil [1 16])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [17 32])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [33 57])
+            ("$(PKG)" function (:arguments ("main.c")) nil [57 124])
+            ("clean" function nil nil [124 182])
+            ("install" function (:arguments ("$(PKG)")) nil [183 263]))          
+      :file "Makefile"
+      :pointmax 291
+      :fsize 290
+      :lastmodtime '(23412 59542 266243 765000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!Tutor7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

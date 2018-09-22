@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [109 128])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [130 150])
+            ("inlineClass" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [174 183])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [174 183])
+                    ("public" label nil (reparse-symbol classsubparts) [185 192])
+                    ("inlineClass" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [207 213])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [214 220]))                          
+                        :type ("inlineClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [195 221])
+                    ("show" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [224 236]))                  
+                :type "class")
+                nil [152 239])
+            ("inlineClass" function
+               (:constructor-flag t
+                :parent "inlineClass"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [273 279])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [280 286]))                  
+                :type ("inlineClass" type (:type "class") nil nil))
+                nil [241 304])
+            ("show" function
+               (:parent "inlineClass"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [305 398])
+            ("main" function (:type "int") nil [400 470]))          
+      :file "main.cpp"
+      :pointmax 471
+      :fsize 397
+      :lastmodtime '(23451 41206 433524 839000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("classes.out")) nil [1 17])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-Werror" "-g")) nil [18 54])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [55 106]))          
+      :file "Makefile"
+      :pointmax 106
+      :fsize 105
+      :lastmodtime '(23451 41222 527421 156000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!05-classes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

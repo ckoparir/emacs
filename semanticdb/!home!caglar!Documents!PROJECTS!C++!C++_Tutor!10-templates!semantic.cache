@@ -1,0 +1,62 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [100 119])
+            ("cstring" include (:system-flag t) nil [120 138])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [140 160])
+            ("GClass" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("_t" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [198 204])
+                    ("public" label nil (reparse-symbol classsubparts) [206 213])
+                    ("GClass" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [232 237]))                          
+                        :type ("GClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [225 250])
+                    ("show" function
+                       (:arguments 
+                          ( ("members" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [263 278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [253 331]))                  )
+                nil [162 334])
+            ("stp" variable
+               (:pointer 1
+                :type ("stPerson" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [336 402])
+            ("stPerson" type
+               (:members 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [356 375])
+                    ("sname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [356 375])
+                    ("age" variable (:type "unsigned int") (reparse-symbol classsubparts) [378 395]))                  
+                :type "struct")
+                nil [336 402])
+            ("main" function (:type "int") nil [404 547]))          
+      :file "main.cpp"
+      :pointmax 548
+      :fsize 554
+      :lastmodtime '(23460 59157 629810 773000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!10-templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

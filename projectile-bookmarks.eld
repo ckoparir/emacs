@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Documents/Test/" "~/Downloads/global-6.6.2/")

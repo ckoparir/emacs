@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <iostream>
+#include <unistd.h>
+
+
+typedef struct test
+{
+  char* name;
+  char* sname;
+  int age;
+  long id;
+}test;
+
+/* This is just a comment to test themes
+   and colors */
+
+   
+int main(int argc, char *argv[])
+{
+  test *t, user;
+
+  user.age = 41;
+  user.id = 2326;
+  user.name =(char*)"caglar";
+  user.sname =(char*)"KOPARIR";
+
+  t = &user;
+
+  printf("test %p", &t);
+  getchar();
+  printf("This is line message...\n");
+
+  for (int i = 0; i < 100; ++i)
+  {
+    std::cout<<i<<std::endl;
+  }
+
+  int age = t->age;
+
+  if(age>30)
+    printf("you're getting older... Age:%d\n", t->age);
+  else
+    printf("you're young... Age:%d\n", t->age);
+  
+
+}

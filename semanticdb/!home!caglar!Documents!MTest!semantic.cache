@@ -1,0 +1,85 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2343 2361])
+            ("stddef.h" include (:system-flag t) nil [2362 2381])
+            ("stdlib.h" include (:system-flag t) nil [2382 2401])
+            ("string.h" include (:system-flag t) nil [2402 2421])
+            ("link.h" include (:system-flag t) nil [2422 2439])
+            ("inttohex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2456 2460]))                  
+                :type "char")
+                nil [2441 2461])
+            ("printbits" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2478 2482]))                  
+                :type "char")
+                nil [2462 2483])
+            ("main" function (:type "int") nil [2485 2871])
+            ("printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2739 2743])
+                    ("" variable (:type ("dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2748])
+                    ("" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2749 2754]))                  
+                :type "int")
+                nil [2712 2755])
+            ("i" variable
+               (:default-value "(ch<='9')?(ch-'0')+48:(ch - 'a')+97"
+                :type "int")
+                nil [2761 2805])
+            ("printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2834 2836]))                  
+                :type "int")
+                nil [2808 2837])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("byte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2850 2855]))                  
+                :type "int")
+                nil [2845 2856])
+            ("hex" variable
+               (:pointer 1
+                :default-value "(char *)malloc(5+1)"
+                :type "char")
+                nil [2902 2934])
+            ("NULL" variable (:type "int") nil [2964 2969])
+            ("sprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2983 2987])
+                    ("" variable (:type ("num" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3001 3005]))                  
+                :type "int")
+                nil [2975 3006])
+            ("hex" variable (:type "int") nil [3019 3023])
+            ("byteptr" variable
+               (:pointer 1
+                :default-value "(char *)malloc(7+1)"
+                :type "char")
+                nil [3057 3093])
+            ("cnt" variable
+               (:default-value "0"
+                :type "int")
+                nil [3096 3108])
+            ("NULL" variable (:type "int") nil [3146 3151])
+            ("byteptr" variable (:type "int") nil [3334 3342]))          
+      :file "main.c"
+      :pointmax 3345
+      :fsize 3344
+      :lastmodtime '(23406 5296 62581 911000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!MTest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

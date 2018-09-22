@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("../include/test.h" include nil nil [21 49])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [51 71])
+            ("test" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [99 110])
+                    ("sname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [115 127])
+                    ("age" variable (:type "int") (reparse-symbol classsubparts) [132 140])
+                    ("id" variable (:type "long") (reparse-symbol classsubparts) [145 153]))                  
+                :type "struct")
+                nil [73 160])
+            ("test" type
+               (:typedef ("test" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [73 160])
+            ("_st" variable (:type ("st" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [162 215])
+            ("st" type
+               (:members 
+                  ( ("fileno" variable (:type "int") (reparse-symbol classsubparts) [178 189])
+                    ("fstruct" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [194 208]))                  
+                :type "struct")
+                nil [162 215])
+            ("main" function (:type "int") nil [218 847]))          
+      :file "test.cpp"
+      :pointmax 848
+      :fsize 847
+      :lastmodtime '(23406 13238 168328 889000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!Test!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

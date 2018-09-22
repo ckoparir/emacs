@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("GLFW_INCLUDE_VULKAN" variable (:constant-flag t) nil [9 28])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [29 52])
+            ("GLM_FORCE_RADIANS" variable (:constant-flag t) nil [62 79])
+            ("GLM_FORCE_DEPTH_ZERO_TO_ONE" variable (:constant-flag t) nil [88 115])
+            ("glm/vec4.hpp" include (:system-flag t) nil [117 140])
+            ("glm/mat4x4.hpp" include (:system-flag t) nil [141 166])
+            ("iostream" include (:system-flag t) nil [167 186])
+            ("main" function (:type "int") nil [188 721]))          
+      :file "main.cpp"
+      :pointmax 722
+      :fsize 721
+      :lastmodtime '(23446 4810 731239 11000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLFW_INCLUDE_VULKAN")
+          ("GLM_FORCE_DEPTH_ZERO_TO_ONE")
+          ("GLM_FORCE_RADIANS")
+          )
+))
+  :file "!home!caglar!Documents!PROJECTS!C++!Vulkan!00-Start!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("gozilla")) nil [530 552])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@")) nil [553 581])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [582 598])
+            ("gozilla_DEPENDENCIES" variable (:default-value ("$(LDADD)")) nil [599 631])
+            ("man_MANS" variable (:default-value ("gozilla.1")) nil [632 653])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "const.h" "manual.in")) nil [654 697])
+            ("gtagsdir" variable (:default-value ("$(DESTDIR)${localstatedir}/gtags")) nil [716 760])
+            ("install-data-hook" function nil nil [760 871]))          
+      :file "Makefile.am"
+      :pointmax 871
+      :fsize 870
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax '((shell-command 780 . 870) (bol 779 . 779))))
+  :file "!home!caglar!Downloads!global-6.6.2!gozilla!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [93 112])
+            ("Print" function
+               (:arguments 
+                  ( ("repeat" variable (:type "int") (reparse-symbol arg-sub-list) [125 136])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137 153])
+                    ("prn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("format" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [194 227])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [226 230]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "void")
+                nil [114 293])
+            ("main" function (:type "int") nil [295 515]))          
+      :file "main.cpp"
+      :pointmax 516
+      :fsize 515
+      :lastmodtime '(23451 40741 34024 298000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("pointer.out")) nil [1 17])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-g")) nil [18 46])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [47 98]))          
+      :file "Makefile"
+      :pointmax 98
+      :fsize 97
+      :lastmodtime '(23451 23913 58456 906000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!04-pointers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

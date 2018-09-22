@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [94 112])
+            ("stdlib.h" include (:system-flag t) nil [113 132])
+            ("time.h" include (:system-flag t) nil [133 150])
+            ("sys/types.h" include (:system-flag t) nil [151 173])
+            ("pwd.h" include (:system-flag t) nil [174 190])
+            ("grp.h" include (:system-flag t) nil [191 207])
+            ("sys/stat.h" include (:system-flag t) nil [208 229])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [240 249])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [250 263]))                  
+                :type "int")
+                nil [231 1349]))          
+      :file "main.c"
+      :pointmax 1350
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor16.out")) nil [1 17])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [18 33])
+            ("CFLAGS" variable (:default-value ("-std=c99" "-Wall")) nil [34 56])
+            ("$(PKG)" function (:arguments ("main.c")) nil [56 123])
+            ("clean" function nil nil [123 181])
+            ("install" function (:arguments ("$(PKG)")) nil [182 262]))          
+      :file "Makefile"
+      :pointmax 290
+      :fsize 289
+      :lastmodtime '(23438 48105 136567 915000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!16!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

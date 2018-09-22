@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("jquery_DATA" variable (:default-value ("jquery.js" "jquery.suggest.css" "jquery.suggest.js" "jquery.treeview.css" "jquery.treeview.js")) nil [530 633])
+            ("jquerydir" variable (:default-value ("${datadir}/gtags/jquery")) nil [634 670])
+            ("EXTRA_DIST" variable (:default-value ("${jquery_DATA}")) nil [671 699]))          
+      :file "Makefile.am"
+      :pointmax 699
+      :fsize 698
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!jquery!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

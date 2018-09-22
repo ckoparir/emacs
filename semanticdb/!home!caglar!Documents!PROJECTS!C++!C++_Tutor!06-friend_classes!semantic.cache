@@ -1,0 +1,107 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("friend.out")) nil [1 16])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-Werror" "-g")) nil [17 53])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [54 105]))          
+      :file "Makefile"
+      :pointmax 105
+      :fsize 104
+      :lastmodtime '(23451 42037 627164 340000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [109 128])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [130 150])
+            ("INUSE" variable
+               (:constant-flag t
+                :default-value "0"
+                :type "int")
+                nil [152 172])
+            ("IDLE" variable
+               (:constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [173 193])
+            ("C2" type
+               (:prototype t
+                :type "class")
+                nil [195 204])
+            ("C1" type
+               (:members 
+                  ( ("status" variable (:type "int") (reparse-symbol classsubparts) [244 255])
+                    ("public" label nil (reparse-symbol classsubparts) [257 264])
+                    ("C1" function (:type "int") (reparse-symbol classsubparts) [267 290])
+                    ("set_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [309 319]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [293 320])
+                    ("is_idle" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("a" variable (:type ("C1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [342 347])
+                            ("b" variable (:type ("C2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [348 353]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [323 354]))                  
+                :type "class")
+                nil [231 357])
+            ("C2" type
+               (:members 
+                  ( ("status" variable (:type "int") (reparse-symbol classsubparts) [372 383])
+                    ("public" label nil (reparse-symbol classsubparts) [385 392])
+                    ("C2" function (:type "int") (reparse-symbol classsubparts) [395 418])
+                    ("set_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [437 447]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [421 448])
+                    ("is_idle" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("a" variable (:type ("C1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 475])
+                            ("b" variable (:type ("C2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [476 481]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [451 482]))                  
+                :type "class")
+                nil [359 485])
+            ("set_status" function
+               (:parent "C1"
+                :arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [507 517]))                  
+                :type "void")
+                nil [487 539])
+            ("set_status" function
+               (:parent "C2"
+                :arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [561 571]))                  
+                :type "void")
+                nil [541 593])
+            ("is_idle" function
+               (:arguments 
+                  ( ("a" variable (:type ("C1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [607 612])
+                    ("b" variable (:type ("C2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 618]))                  
+                :type "int")
+                nil [595 782])
+            ("main" function (:type "int") nil [785 938]))          
+      :file "main.cpp"
+      :pointmax 939
+      :fsize 938
+      :lastmodtime '(23451 46340 745577 906000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!06-friend_classes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

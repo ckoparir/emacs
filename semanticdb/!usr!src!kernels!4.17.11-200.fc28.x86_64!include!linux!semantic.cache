@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LINUX_USB_H" variable (:constant-flag t) nil [70 83])
+            ("linux/mod_devicetable.h" include (:system-flag t) nil [85 119])
+            ("linux/usb/ch9.h" include (:system-flag t) nil [120 146])
+            ("USB_MAJOR" variable (:constant-flag t) nil [156 165])
+            ("USB_DEVICE_MAJOR" variable (:constant-flag t) nil [180 196]))          
+      :file "usb.h"
+      :pointmax 77488
+      :fsize 77487
+      :lastmodtime '(23391 13009 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("USB_DEVICE_MAJOR" . ((number "189" 198 . 201)))
+          ("USB_MAJOR" . ((number "180" 168 . 171)))
+          ("__LINUX_USB_H")
+          )
+))
+  :file "!usr!src!kernels!4.17.11-200.fc28.x86_64!include!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

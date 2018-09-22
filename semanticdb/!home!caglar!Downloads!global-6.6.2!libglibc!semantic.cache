@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libgloglibc.a")) nil [536 569])
+            ("INCS" variable (:default-value ("regex.h" "getopt.h" "obstack.h" "hash-string.h" "getopt_int.h" "fnmatch.h")) nil [570 641])
+            ("SRCS" variable (:default-value ("regex.c" "getopt.c" "getopt1.c" "snprintf.c" "obstack.c" "hash-string.c" "fnmatch.c")) nil [641 720])
+            ("noinst_HEADERS" variable (:default-value ("$(INCS)" "sqlite3.h")) nil [736 771])
+            ("libgloglibc_a_SOURCES" variable (:default-value ("$(SRCS)" "sqlite3.c")) nil [771 813])
+            ("noinst_HEADERS" variable (:default-value ("$(INCS)")) nil [818 843])
+            ("libgloglibc_a_SOURCES" variable (:default-value ("$(SRCS)")) nil [843 875])
+            ("libgloglibc_a_DEPENDENCIES" variable (:default-value ("$(libgloglibc_a_LIBADD)")) nil [882 935])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DSQLITE_THREADSAFE=0" "-DSQLITE_OMIT_LOAD_EXTENSION")) nil [936 1015]))          
+      :file "Makefile.am"
+      :pointmax 1015
+      :fsize 1014
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Downloads!global-6.6.2!libglibc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

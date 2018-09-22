@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("stdlib.h" include (:system-flag t) nil [84 103])
+            ("unistd.h" include (:system-flag t) nil [104 123])
+            ("time.h" include (:system-flag t) nil [124 141])
+            ("print" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [183 194])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [195 204])
+                    ("clear" variable (:type "int") (reparse-symbol arg-sub-list) [205 215]))                  
+                :type "void")
+                nil [172 411])
+            ("println" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [426 437])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [438 447]))                  
+                :type "void")
+                nil [413 589])
+            ("swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [623 630])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [631 638]))                  
+                :type "void")
+                nil [613 695])
+            ("partition" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [762 773])
+                    ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [774 781])
+                    ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [782 789]))                  
+                :type "int")
+                nil [748 1012])
+            ("QuickSort" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1059 1070])
+                    ("lo" variable (:type "int") (reparse-symbol arg-sub-list) [1071 1078])
+                    ("hi" variable (:type "int") (reparse-symbol arg-sub-list) [1079 1086]))                  
+                :type "void")
+                nil [1044 1236])
+            ("SelectionSort" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1456 1467])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1468 1477]))                  
+                :type "void")
+                nil [1437 1693])
+            ("initarray" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1709 1720])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1721 1730]))                  
+                :type "void")
+                nil [1694 1814])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1825 1830]))                  
+                :type "int")
+                nil [1816 2629]))          
+      :file "main.c"
+      :pointmax 2630
+      :fsize 2629
+      :lastmodtime '(23429 23444 706335 699000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor11.out")) nil [1 17])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [18 33])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [34 58])
+            ("$(PKG)" function (:arguments ("main.c")) nil [58 125])
+            ("clean" function nil nil [125 183])
+            ("install" function (:arguments ("$(PKG)")) nil [184 264]))          
+      :file "Makefile"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(23426 47114 404389 444000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

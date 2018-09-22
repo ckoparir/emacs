@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Headers.h" include nil nil [1219 1239])
+            ("VulkanApplication.h" include nil nil [1240 1270])
+            ("instanceExtensionNames" variable
+               (:default-value "{
+	VK_KHR_SURFACE_EXTENSION_NAME,
+	VK_KHR_WIN32_SURFACE_EXTENSION_NAME,
+	VK_EXT_DEBUG_REPORT_EXTENSION_NAME,
+}"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("char" type
+                             (:pointer 1
+                              :constant-flag t)
+                              nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1272 1434])
+            ("layerNames" variable
+               (:default-value "{
+	\"VK_LAYER_GOOGLE_threading\",     
+	\"VK_LAYER_LUNARG_parameter_validation\",
+	\"VK_LAYER_LUNARG_object_tracker\",
+	\"VK_LAYER_LUNARG_image\",         
+	\"VK_LAYER_LUNARG_core_validation\",
+	\"VK_LAYER_GOOGLE_unique_objects\" 
+//VK_LAYER_LUNARG_standard_validation    
+}"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("char" type
+                             (:pointer 1
+                              :constant-flag t)
+                              nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1436 1738])
+            ("deviceExtensionNames" variable
+               (:default-value "{
+	VK_KHR_SWAPCHAIN_EXTENSION_NAME
+}"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("char" type
+                             (:pointer 1
+                              :constant-flag t)
+                              nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1740 1826])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1837 1846])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1847 1859]))                  
+                :type "int")
+                nil [1828 2084]))          
+      :file "main.cpp"
+      :pointmax 2085
+      :fsize 2083
+      :lastmodtime '(23444 41889 877856 786000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!BOOKS!Vulkan!Learning-Vulkan!Chapter 08!8_PipelineStateMgmt!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

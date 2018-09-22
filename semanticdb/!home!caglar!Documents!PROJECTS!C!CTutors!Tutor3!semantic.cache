@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("foreach" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [54 61])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
+                    ("pf" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [82 88]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [41 143])
+            ("printptr" function
+               (:arguments 
+                  ( ("pi" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [159 167]))                  
+                :type "void")
+                nil [145 222])
+            ("incptr" function
+               (:arguments 
+                  ( ("pi" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [236 244]))                  
+                :type "void")
+                nil [224 263])
+            ("main" function (:type "int") nil [265 585]))          
+      :file "main.c"
+      :pointmax 586
+      :fsize 585
+      :lastmodtime '(23411 29728 473349 308000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor3.out")) nil [1 16])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [17 32])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [33 57])
+            ("$(PKG)" function (:arguments ("main.c")) nil [57 124])
+            ("clean" function nil nil [124 182])
+            ("install" function (:arguments ("$(PKG)")) nil [183 263]))          
+      :file "Makefile"
+      :pointmax 291
+      :fsize 290
+      :lastmodtime '(23410 27077 65281 176000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!Tutor3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

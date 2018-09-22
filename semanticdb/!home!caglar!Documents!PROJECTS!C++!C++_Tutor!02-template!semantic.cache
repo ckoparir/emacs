@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [85 104])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [106 126])
+            ("binPrint" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166 180])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [181 190]))                  )
+                nil [128 347])
+            ("main" function (:type "int") nil [349 445]))          
+      :file "main.cpp"
+      :pointmax 446
+      :fsize 445
+      :lastmodtime '(23448 31748 394412 302000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("template.out")) nil [1 18])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-Werror" "-g")) nil [19 55])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [56 107]))          
+      :file "Makefile"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(23448 57995 4881 710000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!02-template!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

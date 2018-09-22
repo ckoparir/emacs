@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [129 147])
+            ("stdlib.h" include (:system-flag t) nil [148 167])
+            ("time.h" include (:system-flag t) nil [168 185])
+            ("string.h" include (:system-flag t) nil [186 205])
+            ("convertobin" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234 252])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [253 275]))                  
+                :type "unsigned char")
+                nil [207 721])
+            ("inverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [746 765]))                  
+                :type "unsigned char")
+                nil [723 986])
+            ("tobin" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1009 1021])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1022 1044]))                  
+                :type "unsigned char")
+                nil [988 1341])
+            ("Add" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1352 1358])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1359 1365]))                  
+                :type "int")
+                nil [1344 1466])
+            ("Sub" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1476 1482])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1483 1489]))                  
+                :type "int")
+                nil [1468 1598])
+            ("AddAsm" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1611 1617])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1618 1624]))                  
+                :type "int")
+                nil [1600 1754])
+            ("main" function (:type "int") nil [1756 2729]))          
+      :file "main.c"
+      :pointmax 2730
+      :fsize 2729
+      :lastmodtime '(23436 40291 835214 210000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tutor13.out")) nil [1 17])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [18 33])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [34 58])
+            ("$(PKG)" function (:arguments ("main.c")) nil [58 125])
+            ("clean" function nil nil [125 183])
+            ("install" function (:arguments ("$(PKG)")) nil [184 264]))          
+      :file "Makefile"
+      :pointmax 292
+      :fsize 291
+      :lastmodtime '(23430 42647 645721 879000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!13!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

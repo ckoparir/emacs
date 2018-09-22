@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("main" function (:type "int") nil [39 274])
+            ("puts" function
+               (:prototype-flag t
+                :type "int")
+                nil [248 257]))          
+      :file "main.c"
+      :pointmax 275
+      :fsize 274
+      :lastmodtime '(23432 28285 658577 26000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("test.out")) nil [1 14])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [15 30])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall" "-lm")) nil [31 59])
+            ("$(PKG)" function (:arguments ("main.c")) nil [59 126])
+            ("clean" function nil nil [126 184])
+            ("install" function (:arguments ("$(PKG)")) nil [185 265]))          
+      :file "Makefile"
+      :pointmax 293
+      :fsize 292
+      :lastmodtime '(23432 24897 202333 628000)
+      :unmatched-syntax '((symbol 55 . 58) (symbol 49 . 54) (symbol 43 . 48) (punctuation 42 . 43) (symbol 38 . 42) (punctuation 37 . 38) (symbol 31 . 37) (bol 31 . 31))))
+  :file "!home!caglar!Documents!PROJECTS!C!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

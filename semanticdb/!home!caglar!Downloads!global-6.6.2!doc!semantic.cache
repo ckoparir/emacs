@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("info_TEXINFOS" variable (:default-value ("global.texi")) nil [536 564])
+            ("global_TEXINFOS" variable (:default-value ("fdl.texi" "reference.texi" "global.ref" "gtags.ref" "htags.ref" "htags-server.ref" "gozilla.ref" "gtags-cscope.ref" "globash.ref" "gtags.conf.ref")) nil [565 717])
+            ("EXTRA_DIST" variable (:default-value ("texinfo.tex")) nil [718 743])
+            ("doxygen" function nil nil [744 836]))          
+      :file "Makefile.am"
+      :pointmax 836
+      :fsize 835
+      :lastmodtime '(23166 1323 0 0)
+      :unmatched-syntax '((shell-command 754 . 835) (bol 753 . 753))))
+  :file "!home!caglar!Downloads!global-6.6.2!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

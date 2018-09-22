@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [52 70])
+            ("stdlib.h" include (:system-flag t) nil [71 90])
+            ("DataFile" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("id" variable (:type "int") (reparse-symbol classsubparts) [111 118])
+                          ("len" variable (:type "long") (reparse-symbol classsubparts) [121 130])
+                          ("data" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [133 144]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [92 156])
+            ("writedatafile" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [208 214]))                  
+                :type ("DataFile" type (:type "class") nil nil))
+                nil [184 215])
+            ("printdatafile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("DataFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [235 245]))                  
+                :type "void")
+                nil [216 246])
+            ("main" function (:type "int") nil [248 425])
+            ("writedatafile" function
+               (:pointer 1
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [451 462]))                  
+                :type ("DataFile" type (:type "class") nil nil))
+                nil [427 624])
+            ("printdatafile" function
+               (:arguments 
+                  ( ("df" variable
+                       (:pointer 1
+                        :type ("DataFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [645 658]))                  
+                :type "void")
+                nil [626 771]))          
+      :file "main.c"
+      :pointmax 772
+      :fsize 771
+      :lastmodtime '(23415 36692 803588 615000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

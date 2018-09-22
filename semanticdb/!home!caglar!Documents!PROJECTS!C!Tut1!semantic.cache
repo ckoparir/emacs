@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("errno" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [60 77])
+            ("_FILE_NAME" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"test.txt\""
+                :type "char")
+                nil [78 114])
+            ("main" function (:type "int") nil [116 570]))          
+      :file "main.c"
+      :pointmax 571
+      :fsize 602
+      :lastmodtime '(23410 3247 809925 361000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("tut1")) nil [1 10])
+            ("DESTDIR" variable (:default-value ("bin/")) nil [60 75])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-Wall")) nil [76 100])
+            ("$(PKG)" function (:arguments ("main.c")) nil [100 167])
+            ("clean" function nil nil [167 225])
+            ("install" function (:arguments ("$(PKG)")) nil [226 306]))          
+      :file "Makefile"
+      :pointmax 421
+      :fsize 420
+      :lastmodtime '(23409 65473 559774 34000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!Tut1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [88 107])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [109 129])
+            ("shared" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [148 154])
+                    ("y" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [157 170])
+                    ("public" label nil (reparse-symbol classsubparts) [172 179])
+                    ("shared" function (:type "int") (reparse-symbol classsubparts) [182 207])
+                    ("set" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [219 225])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [226 232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [210 250])
+                    ("show" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [253 265]))                  
+                :type "class")
+                nil [131 268])
+            ("shared::y" variable (:type "int") nil [270 284])
+            ("show" function
+               (:parent "shared"
+                :type "void")
+                nil [285 416])
+            ("main" function (:type "int") nil [418 681]))          
+      :file "main.cpp"
+      :pointmax 682
+      :fsize 681
+      :lastmodtime '(23451 48438 581852 165000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("static.out")) nil [1 16])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-Werror" "-g")) nil [17 53])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [54 105]))          
+      :file "Makefile"
+      :pointmax 105
+      :fsize 104
+      :lastmodtime '(23451 48188 406477 337000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!07-static_member!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

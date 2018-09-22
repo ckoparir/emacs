@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [62 80])
+            ("stdlib.h" include (:system-flag t) nil [81 100])
+            ("foreach" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [115 122])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [123 132])
+                    ("pf" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [82 88]))                          
+                        :type "void")
+                        nil nil))                  
+                :type "void")
+                nil [102 204])
+            ("printptr" function
+               (:arguments 
+                  ( ("pi" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [220 228]))                  
+                :type "void")
+                nil [206 283])
+            ("incptr" function
+               (:arguments 
+                  ( ("pi" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [297 305]))                  
+                :type "void")
+                nil [285 324])
+            ("main" function (:type "int") nil [326 694]))          
+      :file "main.c"
+      :pointmax 695
+      :fsize 694
+      :lastmodtime '(23415 37872 469120 710000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C!CTutors!03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

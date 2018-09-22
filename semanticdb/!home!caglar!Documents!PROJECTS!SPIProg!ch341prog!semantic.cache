@@ -1,0 +1,2286 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [962 981])
+            ("stdio.h" include (:system-flag t) nil [982 1000])
+            ("stdlib.h" include (:system-flag t) nil [1001 1020])
+            ("unistd.h" include (:system-flag t) nil [1021 1040])
+            ("string.h" include (:system-flag t) nil [1041 1060])
+            ("getopt.h" include (:system-flag t) nil [1061 1080])
+            ("ch341a.h" include nil nil [1081 1100])
+            ("time.h" include (:system-flag t) nil [1101 1118])
+            ("stdio.h" include (:system-flag t) nil [1119 1137])
+            ("verbose" variable (:type "int") nil [1139 1151])
+            ("v_print" function
+               (:arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1166 1175])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1176 1184]))                  
+                :type "void")
+                nil [1153 2030])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2041 2050])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2051 2064]))                  
+                :type "int")
+                nil [2032 8500]))          
+      :file "main.c"
+      :pointmax 8501
+      :fsize 8500
+      :lastmodtime '(23408 49231 6781 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__CH341_H__" variable (:constant-flag t) nil [857 868])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936])
+            ("swapByte" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2955 2983])
+            ("ch341Release" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2948 2953]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2927 2954])
+            ("ch341SpiWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2884 2897])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2925]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2862 2926])
+            ("ch341EraseChip" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2855 2860]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2832 2861])
+            ("ch341WriteStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2790 2831])
+            ("ch341ReadStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2783 2788]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2759 2789])
+            ("ch341SpiRead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2716 2729])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2730 2743])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2757]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2695 2758])
+            ("ch341SpiCapacity" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2663 2694])
+            ("ch341SpiStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2634])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2635 2647])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2598 2662])
+            ("ch341SetStream" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2581 2596]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2558 2597])
+            ("ch341Configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2529 2542])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2543 2556]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2506 2557])
+            ("usbTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2467])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2481])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2504]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2429 2505])
+            ("CH341A_STM_SPI_DBL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2400 2418])
+            ("CH341A_STM_I2C_750K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2379])
+            ("CH341A_STM_I2C_400K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2320 2339])
+            ("CH341A_STM_I2C_100K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2280 2299])
+            ("CH341A_STM_I2C_20K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2240 2258])
+            ("CH341A_CMD_UIO_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2199 2221])
+            ("CH341A_CMD_UIO_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2159 2180])
+            ("CH341A_CMD_UIO_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2119 2141])
+            ("CH341A_CMD_UIO_STM_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2079 2101])
+            ("CH341A_CMD_UIO_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2039 2060])
+            ("CH341A_CMD_I2C_STM_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1998 2020])
+            ("CH341A_CMD_I2C_STM_DLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1958 1980])
+            ("CH341A_CMD_I2C_STM_MS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1918 1939])
+            ("CH341A_CMD_I2C_STM_US" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1878 1899])
+            ("CH341A_CMD_I2C_STM_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1838 1860])
+            ("CH341A_CMD_I2C_STM_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1766 1788])
+            ("CH341A_CMD_I2C_STM_IN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1726 1747])
+            ("CH341A_CMD_I2C_STM_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1686 1708])
+            ("CH341A_CMD_I2C_STM_STO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1646 1668])
+            ("CH341A_CMD_I2C_STM_STA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1606 1628])
+            ("CH341A_CMD_UIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1586])
+            ("CH341A_CMD_I2C_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1525 1546])
+            ("CH341A_CMD_SIO_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1485 1506])
+            ("CH341A_CMD_SPI_STREAM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1445 1466])
+            ("CH341A_CMD_PRINT_OUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1405 1425])
+            ("CH341A_CMD_IO_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1365 1383])
+            ("CH341A_CMD_SET_OUTPUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1325 1346])
+            ("CH341A_USB_PRODUCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1271 1289])
+            ("CH341A_USB_VENDOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1229 1246])
+            ("CH341_MAX_PACKET_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1152 1172])
+            ("CH341_MAX_PACKETS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1113 1130])
+            ("CH341_PACKET_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1092])
+            ("BULK_READ_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1032 1050])
+            ("BULK_WRITE_ENDPOINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [992 1011])
+            ("DEFAULT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [921 936]))          
+      :file "ch341a.h"
+      :pointmax 3021
+      :fsize 3020
+      :lastmodtime '(23408 47597 580680 88000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CH341A_CMD_I2C_STM_IN" . ((number "0xC0" 1749 . 1753)))
+          ("CH341A_CMD_UIO_STM_OUT" . ((number "0x80" 2142 . 2146)))
+          ("CH341A_STM_I2C_750K" . ((number "0x03" 2383 . 2387)))
+          ("CH341A_CMD_UIO_STREAM" . ((number "0xAB" 1588 . 1592)))
+          ("CH341A_STM_I2C_100K" . ((number "0x01" 2303 . 2307)))
+          ("CH341A_CMD_I2C_STM_OUT" . ((number "0x80" 1709 . 1713)))
+          ("CH341A_CMD_I2C_STM_US" . ((number "0x40" 1901 . 1905)))
+          ("CH341A_CMD_IO_ADDR" . ((number "0xA2" 1388 . 1392)))
+          ("CH341A_CMD_I2C_STM_STA" . ((number "0x74" 1629 . 1633)))
+          ("CH341A_CMD_I2C_STM_SET" . ((number "0x60" 1861 . 1865)))
+          ("CH341A_CMD_UIO_STM_END" . ((number "0x20" 2222 . 2226)))
+          ("BULK_READ_ENDPOINT" . ((number "0x82" 1055 . 1059)))
+          ("CH341A_USB_PRODUCT" . ((number "0x7523" 1294 . 1300)))
+          ("CH341A_CMD_I2C_STM_STO" . ((number "0x75" 1669 . 1673)))
+          ("CH341A_CMD_I2C_STM_MS" . ((number "0x50" 1941 . 1945)))
+          ("CH341A_STM_I2C_400K" . ((number "0x02" 2343 . 2347)))
+          ("CH341A_CMD_SPI_STREAM" . ((number "0xA8" 1468 . 1472)))
+          ("CH341A_CMD_I2C_STM_END" . ((number "0x00" 2021 . 2025)))
+          ("CH341_MAX_PACKETS" . ((number "256" 1136 . 1139)))
+          ("CH341A_CMD_I2C_STREAM" . ((number "0xAA" 1548 . 1552)))
+          ("CH341A_CMD_I2C_STM_MAX" . ((semantic-list "( min( 0x3F, CH341_PACKET_LENGTH ) )" 1789 . 1825)))
+          ("CH341A_CMD_UIO_STM_DIR" . ((number "0x40" 2102 . 2106)))
+          ("CH341A_STM_SPI_DBL" . ((number "0x04" 2423 . 2427)))
+          ("CH341A_CMD_UIO_STM_IN" . ((number "0x00" 2062 . 2066)))
+          ("CH341A_USB_VENDOR" . ((number "0x1A86" 1252 . 1258)))
+          ("CH341A_CMD_SET_OUTPUT" . ((number "0xA1" 1348 . 1352)))
+          ("DEFAULT_TIMEOUT" . ((number "1000" 944 . 948)))
+          ("CH341_PACKET_LENGTH" . ((number "0x20" 1096 . 1100)))
+          ("CH341A_CMD_UIO_STM_US" . ((number "0xC0" 2182 . 2186)))
+          ("__CH341_H__")
+          ("BULK_WRITE_ENDPOINT" . ((number "0x02" 1015 . 1019)))
+          ("CH341_MAX_PACKET_LEN" . ((semantic-list "(CH341_PACKET_LENGTH * CH341_MAX_PACKETS)" 1175 . 1216)))
+          ("CH341A_CMD_PRINT_OUT" . ((number "0xA3" 1428 . 1432)))
+          ("CH341A_CMD_I2C_STM_DLY" . ((number "0x0F" 1981 . 1985)))
+          ("CH341A_STM_I2C_20K" . ((number "0x00" 2263 . 2267)))
+          ("CH341A_CMD_SIO_STREAM" . ((number "0xA9" 1508 . 1512)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("libusb-1.0/libusb.h" include (:system-flag t) nil [962 992])
+            ("stdio.h" include (:system-flag t) nil [993 1011])
+            ("stdlib.h" include (:system-flag t) nil [1012 1031])
+            ("stdint.h" include (:system-flag t) nil [1032 1051])
+            ("stdbool.h" include (:system-flag t) nil [1052 1072])
+            ("string.h" include (:system-flag t) nil [1073 1092])
+            ("signal.h" include (:system-flag t) nil [1093 1112])
+            ("ch341a.h" include nil nil [1113 1132])
+            ("bulkin_count" variable (:type ("int32_t" type (:type "class") nil nil)) nil [1134 1155])
+            ("devHandle" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("libusb_device_handle" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1156 1202])
+            ("saold" variable (:type ("sigaction" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1203 1226])
+            ("force_stop" variable
+               (:default-value "0"
+                :type "int")
+                nil [1227 1246])
+            ("v_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1261 1270])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1271 1279]))                  
+                :type "void")
+                nil [1248 1281])
+            ("sig_int" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [1317 1327]))                  
+                :type "void")
+                nil [1304 1351])
+            ("ch341Configure" function
+               (:arguments 
+                  ( ("vid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1447 1460])
+                    ("pid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1461 1474]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1424 3435])
+            ("ch341Release" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3507 3512]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [3486 3723])
+            ("usbTransfer" function
+               (:arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3836 3854])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3855 3868])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3869 3882])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [3883 3891]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [3816 4280])
+            ("ch341SetStream" function
+               (:arguments 
+                  ( ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4464 4479]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [4441 4732])
+            ("swapByte" function
+               (:arguments 
+                  ( ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4832 4842]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4815 5008])
+            ("ch341SpiCs" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5089 5102])
+                    ("selected" variable (:type "bool") (reparse-symbol arg-sub-list) [5103 5117]))                  
+                :type "void")
+                nil [5073 5341])
+            ("ch341SpiStream" function
+               (:arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5417 5430])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5431 5443])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5444 5457]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5394 6636])
+            ("JEDEC_ID_LEN" variable (:constant-flag t) nil [6646 6658])
+            ("ch341SpiCapacity" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6769 6774]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [6744 7840])
+            ("ch341ReadStatus" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7893 7898]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [7869 8118])
+            ("ch341WriteStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8173 8188]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [8148 8629])
+            ("ch341EraseChip" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8671 8676]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [8648 9094])
+            ("cbBulkOut" function
+               (:arguments 
+                  ( ("transfer" variable
+                       (:pointer 1
+                        :type ("libusb_transfer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9154 9187]))                  
+                :type "void")
+                nil [9139 9326])
+            ("cbBulkIn" function
+               (:arguments 
+                  ( ("transfer" variable
+                       (:pointer 1
+                        :type ("libusb_transfer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9384 9417]))                  
+                :type "void")
+                nil [9370 10021])
+            ("ch341SpiRead" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10134 10147])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10148 10161])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10162 10175]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [10113 13487])
+            ("WRITE_PAYLOAD_LENGTH" variable (:constant-flag t) nil [13497 13517])
+            ("ch341SpiWrite" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13648 13661])
+                    ("add" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13662 13675])
+                    ("len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13676 13689]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [13626 16833]))          
+      :file "ch341a.c"
+      :pointmax 16834
+      :fsize 16833
+      :lastmodtime '(23408 47431 464791 305000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JEDEC_ID_LEN" . ((number "0x52" 6659 . 6663)))
+          ("WRITE_PAYLOAD_LENGTH" . ((number "301" 13518 . 13521)))
+          )
+))
+  :file "!home!caglar!Documents!PROJECTS!SPIProg!ch341prog!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [84 103])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [104 124])
+            ("clrscr" function
+               (:arguments 
+                  ( ("size" variable
+                       (:default-value "10"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [138 149]))                  
+                :type "void")
+                nil [126 191])
+            ("indent" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [205 215])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [216 225]))                  
+                :type "void")
+                nil [193 318])
+            ("main" function (:type "int") nil [320 690]))          
+      :file "main.cpp"
+      :pointmax 691
+      :fsize 690
+      :lastmodtime '(23457 15810 208372 287000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PKG" variable (:default-value ("test.out")) nil [1 14])
+            ("CFLAGS" variable (:default-value ("-std=c++14" "-Wall" "-g")) nil [15 43])
+            ("$(PKG)" function (:arguments ("main.cpp")) nil [44 95]))          
+      :file "Makefile"
+      :pointmax 95
+      :fsize 94
+      :lastmodtime '(23455 52060 272005 157000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++_Tutor!08!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

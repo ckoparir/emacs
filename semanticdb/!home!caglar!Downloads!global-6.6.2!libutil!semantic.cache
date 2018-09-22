@@ -1,0 +1,70 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libgloutil.a")) nil [536 568])
+            ("noinst_HEADERS" variable (:default-value ("assoc.h" "conf.h" "dbop.h" "defined.h" "die.h" "find.h" "getdbpath.h" "global.h" "gparam.h" "gtagsop.h" "locatestring.h" "makepath.h" "path.h" "gpathop.h" "strbuf.h" "strmake.h" "tab.h" "test.h" "token.h" "usable.h" "version.h" "is_unixy.h" "abs2rel.h" "split.h" "strlimcpy.h" "linetable.h" "env.h" "char.h" "date.h" "langmap.h" "varray.h" "idset.h" "strhash.h" "xargs.h" "format.h" "encodepath.h" "rewrite.h" "compress.h" "checkalloc.h" "pool.h" "fileop.h" "statistics.h" "args.h" "logging.h" "nearsort.h" "secure_popen.h")) nil [569 1033])
+            ("libgloutil_a_SOURCES" variable (:default-value ("assoc.c" "conf.c" "dbop.c" "defined.c" "die.c" "find.c" "getdbpath.c" "gtagsop.c" "locatestring.c" "makepath.c" "path.c" "gpathop.c" "strbuf.c" "strmake.c" "tab.c" "test.c" "token.c" "usable.c" "version.c" "is_unixy.c" "abs2rel.c" "split.c" "strlimcpy.c" "linetable.c" "env.c" "char.c" "date.c" "langmap.c" "varray.c" "idset.c" "strhash.c" "xargs.c" "encodepath.c" "rewrite.c" "compress.c" "checkalloc.c" "pool.c" "fileop.c" "statistics.c" "args.c" "logging.c" "nearsort.c" "secure_popen.c")) nil [1034 1475])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DBINDIR='\"$(bindir)\"'" "-DDATADIR='\"$(datadir)\"'" "-DLIBDIR='\"$(libdir)\"'" "-DLOCALSTATEDIR='\"$(localstatedir)\"'" "-DSYSCONFDIR='\"$(sysconfdir)\"'")) nil [1476 1658])
+            ("libgloutil_a_DEPENDENCIES" variable (:default-value ("$(libgloutil_a_LIBADD)")) nil [1659 1710])
+            ("man_MANS" variable (:default-value ("gtags.conf.5")) nil [1711 1735])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "manual.in")) nil [1736 1771]))          
+      :file "Makefile.am"
+      :pointmax 1771
+      :fsize 1770
+      :lastmodtime '(23166 1324 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_MAKEPATH_H_" variable (:constant-flag t) nil [803 815])
+            ("makepath" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [838 851])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [852 865])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [866 879]))                  
+                :type "char")
+                nil [817 880])
+            ("makepath_with_tilde" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [913 930]))                  
+                :type "char")
+                nil [881 931]))          
+      :file "makepath.h"
+      :pointmax 961
+      :fsize 960
+      :lastmodtime '(23166 1324 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_MAKEPATH_H_")
+          )
+))
+  :file "!home!caglar!Downloads!global-6.6.2!libutil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

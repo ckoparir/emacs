@@ -1,0 +1,130 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [88 107])
+            ("circle.h" include nil nil [108 127])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [129 149])
+            ("main" function (:type "int") nil [151 207]))          
+      :file "main.cpp"
+      :pointmax 208
+      :fsize 207
+      :lastmodtime '(23447 23596 907342 808000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("abstract")) nil [1 13])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Werror")) nil [14 35])
+            ("${CC}" function (:arguments ("main.cpp" "shape.h" "circle.cpp" "circle.h")) nil [36 129]))          
+      :file "Makefile"
+      :pointmax 129
+      :fsize 156
+      :lastmodtime '(23447 23625 655143 738000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__CIRCLE_H__" variable (:constant-flag t) nil [30 42])
+            ("shape.h" include nil nil [44 62])
+            ("Circle" type
+               (:superclasses 
+                  ( ("Shape" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [93 101])
+                    ("x" variable (:type "double") (reparse-symbol classsubparts) [104 115])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [104 115])
+                    ("public" label nil (reparse-symbol classsubparts) [116 123])
+                    ("Circle" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Circle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [126 135])
+                    ("Circle" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [138 148])
+                    ("getInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [151 166]))                  
+                :type "class")
+                nil [64 169]))          
+      :file "circle.h"
+      :pointmax 178
+      :fsize 177
+      :lastmodtime '(23447 23151 454426 665000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__CIRCLE_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__SHAPE_H__" variable (:constant-flag t) nil [29 40])
+            ("Shape" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [55 62])
+                    ("Shape" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [65 84])
+                    ("getInfo" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [87 112]))                  
+                :type "class")
+                nil [42 115]))          
+      :file "shape.h"
+      :pointmax 124
+      :fsize 123
+      :lastmodtime '(23447 23103 979755 62000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__SHAPE_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("circle.h" include nil nil [21 40])
+            ("Circle" function
+               (:constructor-flag t
+                :parent "Circle"
+                :type ("Circle" type (:type "class") nil nil))
+                nil [42 138])
+            ("getInfo" function
+               (:parent "Circle"
+                :type "void")
+                nil [140 243])
+            ("Circle" function
+               (:destructor-flag t
+                :parent "Circle"
+                :type "void")
+                nil [245 264]))          
+      :file "circle.cpp"
+      :pointmax 266
+      :fsize 265
+      :lastmodtime '(23447 23589 12397 478000)
+      :unmatched-syntax nil))
+  :file "!home!caglar!Documents!PROJECTS!C++!C++11_Tutor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

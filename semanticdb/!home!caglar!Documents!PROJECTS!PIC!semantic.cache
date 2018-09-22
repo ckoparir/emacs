@@ -1,0 +1,148 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/module.h" include (:system-flag t) nil [1 26])
+            ("linux/kernel.h" include (:system-flag t) nil [27 52])
+            ("linux/usb.h" include (:system-flag t) nil [53 75])
+            ("pic_probe" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("usb_interface" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [98 130])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("usb_device_id" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [131 162]))                  
+                :type "int")
+                nil [77 303])
+            ("pic_disconnect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("usb_interface" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [332 364]))                  
+                :type "void")
+                nil [305 418])
+            ("pic_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  //    { USB_DEVICE(0x058F, 0x6387) },
+  { USB_DEVICE(0x1A86, 0x7523) },
+  {} /* Terminating entry */
+}"
+                :type ("usb_device_id" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [420 569])
+            ("MODULE_DEVICE_TABLE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("usb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [591 595])
+                    ("" variable (:type ("pic_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 606]))                  
+                :type "int")
+                nil [570 607])
+            ("picprog_driver" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .name = \"PICProg_driver\",
+    .id_table = pic_table,
+    .probe = pic_probe,
+    .disconnect = pic_disconnect,
+}"
+                :type ("usb_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [609 770])
+            ("pic_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [799 804]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [783 850])
+            ("pic_exit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [880 885]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [864 926])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pic_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 949]))                  
+                :type "int")
+                nil [928 950])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pic_exit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [963 972]))                  
+                :type "int")
+                nil [951 973])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [975 997])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [998 1051])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [1052 1113]))          
+      :file "pic.c"
+      :pointmax 1114
+      :fsize 1113
+      :lastmodtime '(23408 34235 373661 550000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("libusb-1.0/libusb.h" include (:system-flag t) nil [20 50])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [61 70])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71 84]))                  
+                :type "int")
+                nil [52 441]))          
+      :file "pic2.c"
+      :pointmax 442
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("obj-m" variable (:default-value ("pic.o")) nil [1 16])
+            ("KDIR" variable (:default-value ("/lib/modules/$(shell uname -r)/build")) nil [16 61])
+            ("PWD" variable (:default-value ("$(shell pwd)")) nil [61 81])
+            ("default" function nil nil [81 133]))          
+      :file "Makefile"
+      :pointmax 133
+      :fsize 132
+      :lastmodtime '(23408 31761 308195 267000)
+      :unmatched-syntax '((shell-command 91 . 132) (bol 90 . 90) (symbol 124 . 131) (semantic-list 118 . 123) (punctuation 117 . 118) (punctuation 116 . 117) (symbol 109 . 116) (semantic-list 102 . 108) (punctuation 101 . 102) (symbol 98 . 100) (semantic-list 91 . 97) (punctuation 90 . 91) (bol 90 . 90) (symbol 123 . 130) (semantic-list 117 . 122) (punctuation 116 . 117) (punctuation 115 . 116) (symbol 108 . 115) (semantic-list 101 . 107) (punctuation 100 . 101) (symbol 97 . 99) (semantic-list 90 . 96) (punctuation 89 . 90) (punctuation 88 . 89) (symbol 81 . 88) (bol 81 . 81) (symbol 132 . 139) (semantic-list 126 . 131) (punctuation 125 . 126) (punctuation 124 . 125) (symbol 117 . 124) (semantic-list 110 . 116) (punctuation 109 . 110) (symbol 106 . 108) (semantic-list 99 . 105) (punctuation 98 . 99) (bol 90 . 90))))
+  :file "!home!caglar!Documents!PROJECTS!PIC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

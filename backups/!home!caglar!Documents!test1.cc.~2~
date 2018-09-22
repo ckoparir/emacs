@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+struct test
+{
+  char* name;
+  char* sname;
+  int age;
+  long id;
+};
+
+/* This is just a comment to test themes
+   and colors */
+
+   
+int main(int argc, char *argv[])
+{
+  test *t;
+  printf("testt %d", t->age);
+  getchar();
+  printf("This is line message...\n");
+
+  printf("test:");
+  
+  for (int i = 0; i < N; ++i)
+  {
+    xcout<<i<<endl;
+  }
+  
+  if (t!=NULL) {
+    return 0;
+  }
+
+  while (1) {
+    return 0:
+  }
+
+  try {
+    
+  } catch (stderr err) {
+
+  }
+
+  int _ID = t->id;
+  
+  switch (_ID)
+    {
+    case 0: {
+      printf("Age: %d",&t->age);
+      break;
+    }
+    case 1: {
+      printf("1");
+      break;
+    }
+    }
+}
